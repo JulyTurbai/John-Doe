@@ -1,0 +1,89 @@
+.discography {
+     @include flex();
+    .main-title {
+            text-align: center;
+            font-family:'Dosis', sans-serif;
+            font-weight: lighter;
+            text-transform: uppercase;
+            color: #865956;
+            font-size: 50px;
+            letter-spacing: 5px;
+            text-decoration: line-through;
+            margin-bottom: 32px;
+        }
+            &__description {
+                max-width: 720px;
+                text-align: center;
+                margin: 0 auto;
+                margin-bottom: 150px;
+                font-weight: 14px;
+                line-height: 24px;
+        }
+    }
+    .album {
+        @include flex(center, flex-start, center);
+        font-family: Open Sans;
+        &__age {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        &__name {
+            font-size: 14px;
+            font-weight: bold;
+            color: black;
+            margin-top: 10px;
+        }
+        &__info {
+            margin-top: 20px;
+            width: 505px;
+            margin-right: 25px;
+        }
+        &__about {
+            width: 700px;
+        }
+        &__about-title {
+            font-size: 23px;
+            color: black;
+            margin-bottom: 20px;
+        }
+        &__description {
+            font-weight: 14px;
+            line-height: 24px;
+            margin-bottom: 30px;
+        }
+        .album-button {
+            &__hell {
+                @include flex();
+                width: 195px;
+                height: 56px;
+                background-image: url(../img/hellButton-back.png);
+                color:white;
+                font-size: 14px;
+                font-weight: bold;
+                margin-bottom: 115px;
+            }
+            &__night {
+                @include flex();
+                width: 195px;
+                height: 56px;
+                background-image: url(../img/nightButton-back.png);
+                color:black;
+                font-size: 14px;
+                font-weight: bold;
+                margin-bottom: 115px;
+            }
+            &__smoke {
+                @include flex();
+                width: 195px;
+                height: 56px;
+                background-image: url(../img/smokeButton-back.png);
+                color:black;
+                font-size: 14px;
+                font-weight: bold;
+                
+            }
+        }
+    }
+  
+   

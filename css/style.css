@@ -1,0 +1,548 @@
+.header {
+  width: 100%;
+  text-transform: uppercase;
+  background: linear-gradient(42deg, rgb(229, 230, 230) 0%, rgba(229, 230, 230, 0.1) 100%);
+  position: relative;
+}
+.header__main-img {
+  position: absolute;
+  max-width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 62px;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 100;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 5px 0;
+  z-index: 100;
+}
+.header .menu .burger {
+  display: none;
+}
+.header .menu .burger__line {
+  width: 30px;
+  border-bottom: 1px solid #798285;
+  padding-bottom: 5px;
+}
+.header .menu__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.header .menu__item {
+  margin-right: 45px;
+}
+.header .menu__item:last-child {
+  margin-right: 0px;
+}
+.header .menu__link {
+  color: #798285;
+  line-height: 141.1764705882%;
+}
+.header .menu__link:hover {
+  color: #000000;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 8px;
+}
+
+@media (max-width: 1240px) {
+  .header .menu {
+    margin: 0 15px 0;
+  }
+  .header .menu__link:hover {
+    color: #000000;
+    border-bottom: none;
+    text-decoration: underline;
+  }
+}
+@media (max-width: 1000px) {
+  .header .menu {
+    padding-top: 10px;
+  }
+  .header .menu__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header .menu__link {
+    margin-right: 20px;
+    font-size: 14px;
+  }
+  .header .menu__link:last-child {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 610px) {
+  .header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: center;
+            flex-direction: center;
+  }
+  .header .menu__item {
+    margin-right: 20px;
+  }
+  .header .menu__item:nth-child(3) {
+    margin-right: 0;
+  }
+  .header .menu__item:nth-child(4) {
+    display: none;
+  }
+  .header .menu__item:nth-child(5) {
+    display: none;
+  }
+  .header .menu__item:nth-child(6) {
+    display: none;
+  }
+  .header .menu__item:nth-child(7) {
+    display: none;
+  }
+  .header .menu__item:nth-child(8) {
+    display: none;
+  }
+  .header .menu .burger {
+    display: initial;
+    margin-right: 30px;
+  }
+}
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 155px;
+}
+.hero__logo {
+  height: 45vw;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    padding-top: 120px;
+  }
+  .hero__logo {
+    height: 40vw;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1000px) {
+  .hero {
+    padding-top: 100px;
+  }
+  .hero__logo {
+    height: 40vw;
+    width: 70%;
+  }
+}
+@media (max-width: 900px) {
+  .hero {
+    padding-top: 70px;
+  }
+  .hero__logo {
+    height: 40vw;
+    width: 60%;
+  }
+}
+@media (max-width: 750px) {
+  .hero {
+    padding-top: 50px;
+  }
+  .hero__logo {
+    height: 44vw;
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .hero {
+    padding-top: 30px;
+  }
+  .hero__logo {
+    height: 44vw;
+    width: 40%;
+  }
+}
+@media (max-width: 400px) {
+  .hero {
+    padding-top: 20px;
+  }
+  .hero__logo {
+    height: 44vw;
+    width: 40%;
+  }
+}
+.discography {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.discography .main-title {
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #865956;
+  font-size: 50px;
+  letter-spacing: 5px;
+  text-decoration: line-through;
+  margin-bottom: 32px;
+}
+.discography__description {
+  max-width: 720px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  font-weight: 14px;
+  line-height: 24px;
+}
+
+.album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: center;
+          flex-direction: center;
+  font-family: Open Sans;
+}
+.album__age {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.album__name {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  margin-top: 10px;
+}
+.album__info {
+  margin-top: 20px;
+  width: 505px;
+  margin-right: 25px;
+}
+.album__about {
+  width: 700px;
+}
+.album__about-title {
+  font-size: 23px;
+  color: black;
+  margin-bottom: 20px;
+}
+.album__description {
+  font-weight: 14px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.album .album-button__hell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 195px;
+  height: 56px;
+  background-image: url(../img/hellButton-back.png);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 115px;
+}
+.album .album-button__night {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 195px;
+  height: 56px;
+  background-image: url(../img/nightButton-back.png);
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 115px;
+}
+.album .album-button__smoke {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 195px;
+  height: 56px;
+  background-image: url(../img/smokeButton-back.png);
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media (max-width: 1300px) {
+  .discography {
+    margin: 0 30px 0;
+  }
+  .discography .album__info {
+    width: 400px;
+    margin-right: 25px;
+  }
+}
+@media (max-width: 1160px) {
+  .discography {
+    margin: 0 30px 0;
+  }
+  .discography__description {
+    margin-bottom: 120px;
+  }
+  .discography .album__info {
+    width: 300px;
+    margin-right: 25px;
+  }
+  .discography .album__about {
+    width: 600px;
+  }
+}
+@media (max-width: 1100px) {
+  .discography {
+    margin: 0 50px 0;
+  }
+  .discography__description {
+    margin-bottom: 60px;
+  }
+  .discography .album {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .discography .album__info {
+    width: 300px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .discography .album__line {
+    width: 500px;
+  }
+  .discography .album__about {
+    width: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .discography .album .album-button__hell {
+    margin-bottom: 50px;
+  }
+  .discography .album .album-button__night {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 700px) {
+  .discography .main-title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 700px) {
+  .discography {
+    margin: 0 30px 0;
+  }
+  .discography .album__line {
+    width: 400px;
+  }
+}
+@media (max-width: 450px) {
+  .discography {
+    margin: 0 30px 0;
+  }
+  .discography .album__line {
+    width: 250px;
+  }
+}
+@media (max-width: 450px) {
+  .discography .main-title {
+    font-size: 35px;
+  }
+  .discography .album__about-title {
+    font-size: 20px;
+  }
+  .discography .album__description {
+    line-height: 20px;
+  }
+  .discography .album .album-button__hell {
+    width: 130px;
+    height: 40px;
+  }
+  .discography .album .album-button__night {
+    width: 130px;
+    height: 40px;
+  }
+  .discography .album .album-button__smoke {
+    width: 130px;
+    height: 40px;
+  }
+}
+@media (max-width: 350px) {
+  .discography {
+    margin: 0 40px 0;
+  }
+  .discography .main-title {
+    font-size: 35px;
+  }
+  .discography .album__about-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 350px) {
+  .discography .album__about-title {
+    font-size: 18px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+body {
+  height: 100%;
+  line-height: 1;
+  background: #ffffff;
+  font-size: 14px;
+  color: #798285;
+  font-weight: 500;
+  font-family: Open Sans;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,149 @@
+@media (max-width:$discographyBP1) {
+    .discography {
+        margin: 0 30px 0;
+        .album {
+            &__info {
+                width: 400px;
+                margin-right: 25px;
+            }
+        }
+    }
+}
+@media (max-width:$discographyBP2) {
+    .discography {
+        margin: 0 30px 0;
+        &__description {
+            margin-bottom: 120px;
+        }
+        .album {
+            &__info {
+                width: 300px;
+                margin-right: 25px;
+            }
+            &__about {
+                width: 600px;
+            }
+        }
+    }
+}
+@media (max-width:$discographyBP3) {
+    .discography {
+        margin: 0 50px 0;
+        &__description {
+            margin-bottom: 60px;
+        }
+        .album {
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            &__info {
+                width: 300px;
+                margin-right: 0px;
+                margin-bottom: 30px;
+                margin-top: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            &__line {
+                width: 500px;
+            }
+            &__about {
+                width: initial;
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .album-button {
+                &__hell {
+                    margin-bottom: 50px;
+                }
+                &__night {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:$discographyBP4) {
+    .discography {
+        .main-title {
+            font-size: 40px;
+        }
+    }
+}
+@media (max-width:$discographyBP4) {
+    .discography {
+        margin: 0 30px 0;
+        .album {
+            &__line {
+                width: 400px;
+            }
+        }
+    }
+    
+}
+@media (max-width:$discographyBP5) {
+    .discography {
+        margin: 0 30px 0;
+        .album {
+            &__line {
+                width: 250px;
+            }
+        }
+    }
+    
+}
+@media (max-width:$discographyBP5) {
+    .discography {
+        .main-title {
+            font-size: 35px;
+        }
+        .album {
+            &__about-title {
+                font-size: 20px;
+            }
+            &__description {
+                line-height: 20px;
+                }
+            .album-button {
+                &__hell {
+                    width: 130px;
+                    height: 40px;
+                }
+                &__night {
+                    width: 130px;
+                    height: 40px;
+                }
+                &__smoke {
+                    width: 130px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:$discographyBP6) {
+    .discography {
+        margin: 0 40px 0;
+        .main-title {
+            font-size: 35px;
+        }
+    .album {
+        &__about-title {
+            font-size: 20px;
+            }
+        }
+    }
+    
+}
+@media (max-width:$discographyBP6) {
+    .discography {
+    .album {
+        &__about-title {
+            font-size: 18px;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,55 @@
+@media (max-width:$heroBP1) {
+    .hero {
+        padding-top: 120px;
+        &__logo {
+            height: 40vw;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+@media (max-width:$heroBP2) {
+    .hero {
+        padding-top: 100px;
+        &__logo {
+            height: 40vw;
+            width: 70%;
+        }
+    }
+}
+@media (max-width:$heroBP3) {
+    .hero {
+        padding-top: 70px;
+        &__logo {
+            height: 40vw;
+            width: 60%;
+        }
+    }
+}
+@media (max-width:$heroBP4) {
+    .hero {
+        padding-top: 50px;
+        &__logo {
+            height: 44vw;
+            width: 50%;
+        }
+    }
+}
+@media (max-width:$heroBP5) {
+    .hero {
+        padding-top: 30px;
+        &__logo {
+            height: 44vw;
+            width: 40%;
+        }
+    }
+}
+@media (max-width:$heroBP6) {
+    .hero {
+        padding-top: 20px;
+        &__logo {
+            height: 44vw;
+            width: 40%;
+        }
+    }
+}

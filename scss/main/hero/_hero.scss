@@ -1,0 +1,7 @@
+.hero {
+    @include flex();
+    padding-top: 155px;
+    &__logo {
+        height: 45vw;
+    }
+}

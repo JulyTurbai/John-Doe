@@ -1,0 +1,41 @@
+@import "./var";
+@import "./mixin";
+@import "./header/header";
+@import "./header/header-media";
+@import "./main/hero/hero";
+@import "./main/hero/hero-media";
+@import "./main/discography/discography";
+@import "./main/discography/discography-media";
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+	max-width: 100%;
+}
+body {
+	height: 100%;
+	line-height: 1;
+	background: #ffffff;
+	font-size: 14px;
+	color: #798285;
+	font-weight: 500;
+	font-family: Open Sans;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
