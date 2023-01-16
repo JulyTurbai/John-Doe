@@ -1,0 +1,113 @@
+@media (max-width: $concertBP1) {
+    .concert-block {
+        height: initial;
+        padding-bottom: 100px;
+        .concert {
+            margin: 0 30px 0;
+            &__description {
+                padding-bottom: 450px;
+            }
+        }
+    }
+}
+@media (max-width: $concertBP2) {
+    .concert-block {
+        .concert {
+            padding-top: 90px;
+            &__description {
+                padding-bottom: 400px;
+            }
+        }
+    }
+}
+@media (max-width: $concertBP3) {
+    .concert-block {
+        .concert {
+            padding-top: 90px;
+            &__description {
+                padding-bottom: 300px;
+            }
+        }
+    }
+}
+@media (max-width: $concertBP4) {
+    .concert-block {
+        .concert {
+            .main-title {
+                font-size: 45px;
+            }
+            padding-top: 90px;
+            &__description {
+                padding-bottom: 200px;
+            }
+        }
+    }
+}
+@media (max-width: $concertBP5) {
+    .concert-block {
+        .concert {
+            .main-title {
+                font-size: 40px;
+            }
+            padding-top: 90px;
+            &__description {
+                padding-bottom: 150px;
+            }
+            .tour {
+                width: initial;
+                &__name {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: $concertBP6) {
+    .concert-block {
+        .concert {
+            .main-title {
+                font-size: 35px;
+            }
+            padding-top: 90px;
+            &__description {
+                padding-bottom: 100px;
+            }
+            .tour {
+                &__line {
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: $concertBP6) {
+    .concert-block {
+        .concert {
+            margin: 0 20px 0;
+            .tour {
+               &__button {
+                width: 130px;
+                height: 40px;
+               }
+            }
+        }
+    }
+}
+@media (max-width: $concertBP7) {
+    .concert-block {
+        .concert {
+            .main-title {
+                font-size: 25px;
+            }
+            padding-top: 90px;
+            &__description {
+                padding-bottom: 100px;
+            }
+            .tour {
+                &__line {
+                    width: 250px;
+                }
+            }
+        }
+    }
+}

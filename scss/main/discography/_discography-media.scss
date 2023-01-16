@@ -1,15 +1,21 @@
 @media (max-width:$discographyBP1) {
+    .discography-block {
+        height: initial;
+        margin-top: 30px;
+        padding-bottom: 165px;
     .discography {
         margin: 0 30px 0;
         .album {
             &__info {
                 width: 400px;
                 margin-right: 25px;
+                }
             }
         }
     }
 }
 @media (max-width:$discographyBP2) {
+    .discography-block {
     .discography {
         margin: 0 30px 0;
         &__description {
@@ -22,13 +28,15 @@
             }
             &__about {
                 width: 600px;
+                }
             }
         }
     }
 }
 @media (max-width:$discographyBP3) {
+    .discography-block {
     .discography {
-        margin: 0 50px 0;
+        margin: 0 30px 0;
         &__description {
             margin-bottom: 60px;
         }
@@ -60,41 +68,54 @@
                 }
                 &__night {
                     margin-bottom: 50px;
+                    }
                 }
             }
         }
     }
 }
 @media (max-width:$discographyBP4) {
+    .discography-block {
+        padding-bottom: 100px;
     .discography {
         .main-title {
             font-size: 40px;
+            }
         }
     }
 }
 @media (max-width:$discographyBP4) {
+    .discography-block {
     .discography {
         margin: 0 30px 0;
+        &__description {
+            margin-bottom: 50px;
+        }
         .album {
             &__line {
                 width: 400px;
+                }
+            &__about-title {
+                font-size: 20px;
+            }
             }
         }
     }
-    
 }
 @media (max-width:$discographyBP5) {
+    .discography-block {
     .discography {
-        margin: 0 30px 0;
+        margin: 0 20px 0;
         .album {
             &__line {
                 width: 250px;
+                }
             }
         }
     }
-    
 }
 @media (max-width:$discographyBP5) {
+    .discography-block {
     .discography {
         .main-title {
             font-size: 35px;
@@ -105,6 +126,9 @@
             }
             &__description {
                 line-height: 20px;
+                }
+                &__info {
+                    width: initial;
                 }
             .album-button {
                 &__hell {
@@ -118,30 +142,34 @@
                 &__smoke {
                     width: 130px;
                     height: 40px;
+                    }
                 }
             }
         }
     }
 }
 @media (max-width:$discographyBP6) {
+    .discography-block {
     .discography {
-        margin: 0 40px 0;
+        margin: 0 20px 0;
         .main-title {
-            font-size: 35px;
+            font-size: 25px;
         }
     .album {
         &__about-title {
             font-size: 20px;
+                }
             }
         }
     }
-    
 }
 @media (max-width:$discographyBP6) {
+    .discography-block {
     .discography {
     .album {
         &__about-title {
             font-size: 18px;
+                }
             }
         }
     }

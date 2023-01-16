@@ -226,7 +226,14 @@
     width: 40%;
   }
 }
-.discography {
+.discography-block {
+  height: 1810px;
+  background-image: url(../img/mountains.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+.discography-block .discography {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,7 +248,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
 }
-.discography .main-title {
+.discography-block .discography .main-title {
   text-align: center;
   font-family: "Dosis", sans-serif;
   font-weight: lighter;
@@ -252,7 +259,7 @@
   text-decoration: line-through;
   margin-bottom: 32px;
 }
-.discography__description {
+.discography-block .discography__description {
   max-width: 720px;
   text-align: center;
   margin: 0 auto;
@@ -372,38 +379,52 @@
   font-weight: bold;
 }
 
+.mountains {
+  max-height: 787px;
+}
+.mountains__img {
+  width: 100%;
+  z-index: -1;
+  bottom: -187%;
+}
+
 @media (max-width: 1300px) {
-  .discography {
+  .discography-block {
+    height: initial;
+    margin-top: 30px;
+    padding-bottom: 165px;
+  }
+  .discography-block .discography {
     margin: 0 30px 0;
   }
-  .discography .album__info {
+  .discography-block .discography .album__info {
     width: 400px;
     margin-right: 25px;
   }
 }
 @media (max-width: 1160px) {
-  .discography {
+  .discography-block .discography {
     margin: 0 30px 0;
   }
-  .discography__description {
+  .discography-block .discography__description {
     margin-bottom: 120px;
   }
-  .discography .album__info {
+  .discography-block .discography .album__info {
     width: 300px;
     margin-right: 25px;
   }
-  .discography .album__about {
+  .discography-block .discography .album__about {
     width: 600px;
   }
 }
 @media (max-width: 1100px) {
-  .discography {
-    margin: 0 50px 0;
+  .discography-block .discography {
+    margin: 0 30px 0;
   }
-  .discography__description {
+  .discography-block .discography__description {
     margin-bottom: 60px;
   }
-  .discography .album {
+  .discography-block .discography .album {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: vertical;
@@ -414,7 +435,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .discography .album__info {
+  .discography-block .discography .album__info {
     width: 300px;
     margin-right: 0px;
     margin-bottom: 30px;
@@ -430,10 +451,10 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .discography .album__line {
+  .discography-block .discography .album__line {
     width: 500px;
   }
-  .discography .album__about {
+  .discography-block .discography .album__about {
     width: initial;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -443,71 +464,256 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .discography .album .album-button__hell {
+  .discography-block .discography .album .album-button__hell {
     margin-bottom: 50px;
   }
-  .discography .album .album-button__night {
+  .discography-block .discography .album .album-button__night {
     margin-bottom: 50px;
   }
 }
 @media (max-width: 700px) {
-  .discography .main-title {
+  .discography-block {
+    padding-bottom: 100px;
+  }
+  .discography-block .discography .main-title {
     font-size: 40px;
   }
 }
 @media (max-width: 700px) {
-  .discography {
+  .discography-block .discography {
     margin: 0 30px 0;
   }
-  .discography .album__line {
+  .discography-block .discography__description {
+    margin-bottom: 50px;
+  }
+  .discography-block .discography .album__line {
     width: 400px;
+  }
+  .discography-block .discography .album__about-title {
+    font-size: 20px;
   }
 }
 @media (max-width: 450px) {
-  .discography {
-    margin: 0 30px 0;
+  .discography-block .discography {
+    margin: 0 20px 0;
   }
-  .discography .album__line {
+  .discography-block .discography .album__line {
     width: 250px;
   }
 }
 @media (max-width: 450px) {
-  .discography .main-title {
+  .discography-block .discography .main-title {
     font-size: 35px;
   }
-  .discography .album__about-title {
+  .discography-block .discography .album__about-title {
     font-size: 20px;
   }
-  .discography .album__description {
+  .discography-block .discography .album__description {
     line-height: 20px;
   }
-  .discography .album .album-button__hell {
+  .discography-block .discography .album__info {
+    width: initial;
+  }
+  .discography-block .discography .album .album-button__hell {
     width: 130px;
     height: 40px;
   }
-  .discography .album .album-button__night {
+  .discography-block .discography .album .album-button__night {
     width: 130px;
     height: 40px;
   }
-  .discography .album .album-button__smoke {
+  .discography-block .discography .album .album-button__smoke {
     width: 130px;
     height: 40px;
   }
 }
 @media (max-width: 350px) {
-  .discography {
-    margin: 0 40px 0;
+  .discography-block .discography {
+    margin: 0 20px 0;
   }
-  .discography .main-title {
-    font-size: 35px;
+  .discography-block .discography .main-title {
+    font-size: 25px;
   }
-  .discography .album__about-title {
+  .discography-block .discography .album__about-title {
     font-size: 20px;
   }
 }
 @media (max-width: 350px) {
-  .discography .album__about-title {
+  .discography-block .discography .album__about-title {
     font-size: 18px;
+  }
+}
+.concert-block {
+  height: 1420px;
+  background-image: url(../img/concert-back.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+.concert-block .concert {
+  padding-top: 145px;
+}
+.concert-block .concert .main-title {
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #7fb2b1;
+  font-size: 50px;
+  letter-spacing: 5px;
+  text-decoration: line-through;
+  padding-bottom: 45px;
+}
+.concert-block .concert__description {
+  text-align: center;
+  max-width: 875px;
+  margin: 0 auto;
+  font-weight: 14px;
+  line-height: 24px;
+  padding-bottom: 475px;
+}
+.concert-block .concert .tour {
+  width: 665px;
+}
+.concert-block .concert .tour__data {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.concert-block .concert .tour__line {
+  width: 395px;
+  border: 1px solid black;
+}
+.concert-block .concert .tour__name {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 85px;
+}
+.concert-block .concert .tour__present-data {
+  font-size: 23px;
+  color: black;
+  margin-bottom: 25px;
+}
+.concert-block .concert .tour__description {
+  font-weight: 14px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.concert-block .concert .tour__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 195px;
+  height: 55px;
+  border: 1px solid #abb0b0;
+}
+.concert-block .concert .tour__buy {
+  margin-right: 20px;
+}
+
+@media (max-width: 1568px) {
+  .concert-block {
+    height: initial;
+    padding-bottom: 100px;
+  }
+  .concert-block .concert {
+    margin: 0 30px 0;
+  }
+  .concert-block .concert__description {
+    padding-bottom: 450px;
+  }
+}
+@media (max-width: 1310px) {
+  .concert-block .concert {
+    padding-top: 90px;
+  }
+  .concert-block .concert__description {
+    padding-bottom: 400px;
+  }
+}
+@media (max-width: 1170px) {
+  .concert-block .concert {
+    padding-top: 90px;
+  }
+  .concert-block .concert__description {
+    padding-bottom: 300px;
+  }
+}
+@media (max-width: 1000px) {
+  .concert-block .concert {
+    padding-top: 90px;
+  }
+  .concert-block .concert .main-title {
+    font-size: 45px;
+  }
+  .concert-block .concert__description {
+    padding-bottom: 200px;
+  }
+}
+@media (max-width: 800px) {
+  .concert-block .concert {
+    padding-top: 90px;
+  }
+  .concert-block .concert .main-title {
+    font-size: 40px;
+  }
+  .concert-block .concert__description {
+    padding-bottom: 150px;
+  }
+  .concert-block .concert .tour {
+    width: initial;
+  }
+  .concert-block .concert .tour__name {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 450px) {
+  .concert-block .concert {
+    padding-top: 90px;
+  }
+  .concert-block .concert .main-title {
+    font-size: 35px;
+  }
+  .concert-block .concert__description {
+    padding-bottom: 100px;
+  }
+  .concert-block .concert .tour__line {
+    width: 250px;
+  }
+}
+@media (max-width: 450px) {
+  .concert-block .concert {
+    margin: 0 20px 0;
+  }
+  .concert-block .concert .tour__button {
+    width: 130px;
+    height: 40px;
+  }
+}
+@media (max-width: 350px) {
+  .concert-block .concert {
+    padding-top: 90px;
+  }
+  .concert-block .concert .main-title {
+    font-size: 25px;
+  }
+  .concert-block .concert__description {
+    padding-bottom: 100px;
+  }
+  .concert-block .concert .tour__line {
+    width: 250px;
   }
 }
 * {

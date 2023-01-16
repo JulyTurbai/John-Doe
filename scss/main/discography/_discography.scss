@@ -1,6 +1,13 @@
-.discography {
+.discography-block {
+    height: 1810px;
+    background-image: url(../img/mountains.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    
+    .discography {
      @include flex();
-    .main-title {
+        .main-title {
             text-align: center;
             font-family:'Dosis', sans-serif;
             font-weight: lighter;
@@ -20,9 +27,12 @@
                 line-height: 24px;
         }
     }
+}
+
     .album {
         @include flex(center, flex-start, center);
         font-family: Open Sans;
+        
         &__age {
             font-size: 14px;
             font-weight: bold;
@@ -85,5 +95,15 @@
             }
         }
     }
+    .mountains {
+        max-height: 787px;
+           &__img {
+            width: 100%;
+            z-index: -1;
+            
+            bottom: -187%;
+        }
+    }
+
   
    

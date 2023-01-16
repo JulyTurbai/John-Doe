@@ -1,0 +1,67 @@
+.concert-block {
+    height: 1420px;
+    background-image: url(../img/concert-back.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    .concert {
+        padding-top: 145px;
+        .main-title {
+            text-align: center;
+            font-family:'Dosis', sans-serif;
+            font-weight: lighter;
+            text-transform: uppercase;
+            color: #7fb2b1;
+            font-size: 50px;
+            letter-spacing: 5px;
+            text-decoration: line-through;
+            padding-bottom: 45px;
+        }
+        &__description {
+            text-align: center;
+            max-width: 875px;
+            margin: 0 auto;
+            font-weight: 14px;
+            line-height: 24px;
+            padding-bottom: 475px;
+        }
+        .tour {
+            width: 665px;
+            &__data {
+                font-size: 14px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            &__line {
+                width: 395px;
+                border: 1px solid black;
+            }
+            &__name {
+                font-size: 14px;
+                font-weight: bold;
+                color: black;
+                margin-top: 10px;
+                margin-bottom: 85px;
+            }
+            &__present-data {
+                font-size: 23px;
+                color: black;
+                margin-bottom: 25px;
+            }
+            &__description {
+                font-weight: 14px;
+                line-height: 24px;
+                margin-bottom: 20px;
+            }
+            &__button {
+                @include flex();
+                width: 195px;
+                height: 55px;
+                border: 1px solid #abb0b0;
+            }
+            &__buy {
+                margin-right: 20px;
+            }
+        }
+    }
+}
