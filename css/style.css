@@ -716,6 +716,154 @@
     width: 250px;
   }
 }
+.compositions {
+  height: 1990px;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+.compositions .main-title {
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: black;
+  font-size: 50px;
+  letter-spacing: 5px;
+  text-decoration: line-through;
+  padding-bottom: 45px;
+}
+.compositions__description {
+  text-align: center;
+  max-width: 690px;
+  margin: 0 auto;
+  font-weight: 14px;
+  line-height: 24px;
+  margin-bottom: 165px;
+}
+
+.song {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.song__description {
+  width: 600px;
+  height: 425px;
+  background: #f5f6f6;
+  padding: 35px 55px 35px 35px;
+}
+.song__data {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.song__line {
+  width: 395px;
+  border: 1px solid black;
+}
+.song__name {
+  font-size: 23px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.song__about {
+  height: 70px;
+  width: 505px;
+  overflow: hidden;
+  font-weight: 14px;
+  line-height: 24px;
+  margin-bottom: 60px;
+}
+.song__reactions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.song__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.song__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.song__icon img {
+  margin-right: 10px;
+}
+.song__number {
+  font-size: 12px;
+  margin-right: 20px;
+}
+.song__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 195px;
+  height: 55px;
+  border: 1px solid #b5b5b5;
+  margin-right: 35px;
+}
+.song__visit {
+  margin-right: 15px;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+.song__video1 {
+  width: 600px;
+  height: 425px;
+  background-image: url(../img/song1.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.song__video2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 600px;
+  height: 425px;
+  background-image: url(../img/song2.png);
+}
+.song__video3 {
+  width: 600px;
+  height: 425px;
+  background-image: url(../img/song3.png);
+}
+
+@media (max-width: 1330px) {
+  .compositions {
+    margin: 0 30px 0;
+  }
+}
 * {
   margin: 0;
   padding: 0;

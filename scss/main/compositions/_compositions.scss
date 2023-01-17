@@ -1,0 +1,107 @@
+.compositions {
+    height: 1990px;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    .main-title {
+        text-align: center;
+        font-family:'Dosis', sans-serif;
+        font-weight: lighter;
+        text-transform: uppercase;
+        color: black;
+        font-size: 50px;
+        letter-spacing: 5px;
+        text-decoration: line-through;
+        padding-bottom: 45px;
+    }
+    &__description {
+        text-align: center;
+        max-width: 690px;
+        margin: 0 auto;
+        font-weight: 14px;
+        line-height: 24px;
+        margin-bottom: 165px;
+    }
+}
+.song {
+        display:flex;
+        &__description {
+            width: 600px;
+            height: 425px;
+            background: #f5f6f6;
+            padding: 35px 55px 35px 35px;
+        }
+        &__data {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        &__line {
+            width: 395px;
+            border: 1px solid black;
+        }
+        &__name {
+            font-size: 23px;
+            color: black;
+            margin-top: 10px;
+             margin-bottom: 40px;
+        }
+        &__about {
+            height: 70px;
+            width: 505px;
+            overflow: hidden;
+            font-weight: 14px;
+            line-height: 24px;
+            margin-bottom: 60px;
+        }
+        &__reactions {
+            display: flex;
+            align-items: flex-end;
+        }
+        &__icons {
+            display: flex;
+        }
+        &__icon {
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: 10px
+            }
+        }
+        &__number {
+            font-size: 12px;
+            margin-right: 20px;
+        }
+        &__button {
+            @include flex();
+            width: 195px;
+            height: 55px;
+            border: 1px solid #b5b5b5;
+            margin-right: 35px;
+        }
+        &__visit {
+            margin-right: 15px;
+            color: black;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        &__video1 {
+            width: 600px;
+            height: 425px;
+            background-image: url(../img/song1.png);
+            display: flex;
+            align-items: center;
+        }
+        &__video2 {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 600px;
+            height: 425px;
+            background-image: url(../img/song2.png);
+        }
+        &__video3 {
+            width: 600px;
+            height: 425px;
+            background-image: url(../img/song3.png);
+        }
+}
