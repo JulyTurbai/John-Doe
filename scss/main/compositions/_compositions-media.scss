@@ -1,6 +1,435 @@
 @media (max-width:$compositionsBP1) {
     .compositions {
         margin: 0 30px 0;
+        height: initial;
+        padding-top: 100px;
+        padding-bottom: 80px;
+        .main-title {
+            font-size: 45px;
+        }
+        &__description {
+            margin-bottom: 100px;
+        }
+        .song {
+           display: flex;
+           justify-content: center;
+        
+            &__description {
+                max-width: 450px;
+                max-height: 325px;
+                padding: 20px 20px 20px 20px;
+            }
+            &__name {
+                font-size: 20px;
+                margin-bottom: 25px
+            }
+            &__about {
+                width: 380px;
+                font-weight: 14px;
+                line-height: 22px;
+            }
+            &__button {
+                width: 150px;
+                height: 45px;
+            }
+            &__visit {
+                margin-right: 10px;
+                font-size: 13px;
+            }
+            &__number {
+                font-size: 10px;
+                margin-right: 10px;
+            }
+            &__line {
+                width: 250px;
+            }
+            &__video1 {
+                max-width: 450px;
+                max-height: 325px;
+            }
+            &__video2 {
+                max-width: 450px;
+                max-height: 325px;
+            }
+            &__video3 {
+                max-width: 450px;
+                max-height: 325px;
+            }
+        }
+    }
+}
+@media (max-width:$compositionsBP2) {
+    .compositions {
+        margin: 0 30px 0;
+        height: initial;
+        padding-top: 100px;
+        padding-bottom: 80px;
+        .main-title {
+            font-size: 37px;
+        }
+        &__description {
+            margin-bottom: 70px;
+        }
+        .song {
+           display: flex;
+           justify-content: center;
+        
+            &__description {
+                max-width: 350px;
+                max-height: 225px;
+                padding: 20px 20px 20px 20px;
+            }
+            &__name {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+            &__about {
+                width: 300px;
+                font-size: 12px;
+                line-height: 17px;
+                margin-bottom: 15px;
 
+            }
+            &__button {
+                width: 100px;
+                height: 25px;
+            }
+            &__visit {
+                margin-right: 5px;
+                font-size: 9px;
+            }
+            &__number {
+                font-size: 10px;
+                margin-right: 5px;
+            }
+            &__icon img {
+                margin-right: 3px;
+            }
+            &__line {
+                width: 200px;
+            }
+            &__video1 {
+                max-width: 350px;
+                max-height: 225px;
+                background-size: cover;
+                background-position: center;
+            }
+            &__video2 {
+                max-width: 350px;
+                max-height: 225px;
+                background-size: cover;
+                background-position: center;
+            }
+            &__video3 {
+                max-width: 350px;
+                max-height: 225px;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
+@media (max-width:$compositionsBP3) {
+    .compositions {
+        margin: 0 30px 0;
+        height: initial;
+        padding-top: 70px;
+        padding-bottom: 80px;
+        .main-title {
+            font-size: 35px;
+        }
+        &__description {
+            margin-bottom: 70px;
+        }
+        .song {
+           flex-wrap: wrap;
+           flex-direction: column;
+           align-items: center;
+           margin-bottom: 30px;
+            &__description {
+                max-width: 520px;
+                max-height: 325px;
+                padding: 40px 20px 20px 20px;
+            }
+            &__name {
+                font-size: 16px;
+                margin-bottom: 35px;
+            }
+            &__about {
+                width: 380px;
+                font-size: 12px;
+                line-height: 17px;
+                margin-bottom: 35px;
+
+            }
+            &__button {
+                width: 140px;
+                height: 45px;
+            }
+            &__visit {
+                margin-right: 7px;
+                font-size: 12px;
+            }
+            &__number {
+                font-size: 10px;
+                margin-right: 10px;
+            }
+            &__icon img {
+                margin-right: 6px;
+            }
+            &__line {
+                width: 300px;
+            }
+            &__video1 {
+                max-width: 520px;
+                max-height: 325px;
+                background-size: cover;
+                background-position: center;
+            }
+            &__video2 {
+                max-width: 520px;
+                max-height: 325px;
+                background-size: cover;
+                background-position: center;
+            }
+            &__video3 {
+                max-width: 520px;
+                max-height: 325px;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
+@media (max-width:$compositionsBP4) {
+    .compositions {
+        margin: 0 30px 0;
+        height: initial;
+        padding-top: 70px;
+        padding-bottom: 40px;
+        .main-title {
+            font-size: 30px;
+        }
+        &__description {
+            margin-bottom: 70px;
+        }
+        .song {
+           flex-wrap: wrap;
+           flex-direction: column;
+           align-items: center;
+           margin-bottom: 30px;
+            &__description {
+                max-width: 390px;
+                max-height: 250px;
+                padding: 15px 15px 15px 15px;
+            }
+            &__name {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+            &__about {
+                width: 320px;
+                font-size: 12px;
+                line-height: 17px;
+                margin-bottom: 20px;
+
+            }
+            &__button {
+                width: 130px;
+                height: 40px;
+            }
+            &__visit {
+                margin-right: 7px;
+                font-size: 12px;
+            }
+            &__number {
+                font-size: 10px;
+                margin-right: 10px;
+            }
+            &__icon img {
+                margin-right: 3px;
+            }
+            &__line {
+                width: 230px;
+            }
+            &__video1 {
+                max-width: 390px;
+                max-height: 250px;
+                background-size: cover;
+                background-position: center;
+            }
+            &__video2 {
+                max-width: 390px;
+                max-height: 250px;
+                background-size: cover;
+                background-position: center;
+            }
+            &__video3 {
+                max-width: 390px;
+                max-height: 250px;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
+@media (max-width:$compositionsBP5) {
+    .compositions {
+        margin: 0 30px 0;
+        height: initial;
+        padding-top: 70px;
+        padding-bottom: 40px;
+        .main-title {
+            font-size: 27px;
+        }
+        &__description {
+            margin-bottom: 60px;
+        }
+        .song {
+           flex-wrap: wrap;
+           flex-direction: column;
+           align-items: center;
+           margin-bottom: 30px;
+            &__description {
+                max-width: 300px;
+                max-height: 250px;
+                padding: 15px 15px 15px 15px;
+            }
+            &__name {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            &__about {
+                width: 200px;
+                font-size: 12px;
+                line-height: 17px;
+                margin-bottom: 20px;
+
+            }
+            &__button {
+                width: 114px;
+                height: 35px;
+                margin-right: 20px;
+            }
+            &__visit {
+                margin-right: 5px;
+                font-size: 9px;
+            }
+            &__number {
+                font-size: 9px;
+                margin-right: 10px;
+            }
+            &__icon {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            &__icon img {
+                width: 10px;
+                margin-bottom: 5px;
+            }
+            &__line {
+                width: 230px;
+            }
+            &__video1 {
+                max-width: 300px;
+                max-height: 250px;
+                background-size: cover;
+                background-position: center;
+            }
+            &__video2 {
+                max-width: 300px;
+                max-height: 250px;
+                background-size: cover;
+                background-position: center;
+            }
+            &__video3 {
+                max-width: 300px;
+                max-height: 250px;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
+@media (max-width:$compositionsBP6) {
+    .compositions {
+        margin: 0 20px 0;
+        height: initial;
+        padding-top: 55px;
+        padding-bottom: 40px;
+        .main-title {
+            font-size: 25px;
+        }
+        &__description {
+            margin-bottom: 50px;
+            font-size: 13px;
+        }
+        .song {
+           flex-wrap: wrap;
+           flex-direction: column;
+           align-items: center;
+           margin-bottom: 30px;
+            &__description {
+                max-width: 280px;
+                max-height: 240px;
+                padding: 15px 15px 15px 15px;
+            }
+            &__data {
+                font-size: 13px;
+            }
+            &__name {
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+            &__about {
+                width: 200px;
+                font-size: 12px;
+                line-height: 17px;
+                margin-bottom: 20px;
+
+            }
+            &__button {
+                width: 119px;
+                height: 35px;
+                margin-right: 15px;
+            }
+            &__visit {
+                margin-right: 3px;
+                font-size: 9px;
+            }
+            &__number {
+                font-size: 9px;
+                margin-right: 10px;
+            }
+            &__icon {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            &__icon img {
+                width: 10px;
+                margin-bottom: 5px;
+            }
+            &__line {
+                width: 230px;
+            }
+            &__video1 {
+                max-width: 280px;
+                max-height: 240px;
+                background-size: cover;
+                background-position: center;
+            }
+            &__video2 {
+                max-width: 280px;
+                max-height: 240px;
+                background-size: cover;
+                background-position: center;
+            }
+            &__video3 {
+                max-width: 280px;
+                max-height: 240px;
+                background-size: cover;
+                background-position: center;
+            }
+        }
     }
 }

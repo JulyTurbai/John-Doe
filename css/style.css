@@ -597,7 +597,7 @@
   margin-bottom: 25px;
 }
 .concert-block .concert .tour__description {
-  font-weight: 14px;
+  font-size: 14px;
   line-height: 24px;
   margin-bottom: 20px;
 }
@@ -692,6 +692,9 @@
   .concert-block .concert .tour__line {
     width: 250px;
   }
+  .concert-block .concert .tour__description {
+    font-size: 13px;
+  }
 }
 @media (max-width: 450px) {
   .concert-block .concert {
@@ -736,7 +739,7 @@
   text-align: center;
   max-width: 690px;
   margin: 0 auto;
-  font-weight: 14px;
+  font-size: 14px;
   line-height: 24px;
   margin-bottom: 165px;
 }
@@ -745,6 +748,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 55px;
 }
 .song__description {
   width: 600px;
@@ -832,6 +836,7 @@
   width: 600px;
   height: 425px;
   background-image: url(../img/song1.png);
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -852,16 +857,479 @@
   width: 600px;
   height: 425px;
   background-image: url(../img/song2.png);
+  background-size: cover;
 }
 .song__video3 {
   width: 600px;
   height: 425px;
   background-image: url(../img/song3.png);
+  background-size: cover;
 }
 
 @media (max-width: 1330px) {
   .compositions {
     margin: 0 30px 0;
+    height: initial;
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  .compositions .main-title {
+    font-size: 45px;
+  }
+  .compositions__description {
+    margin-bottom: 100px;
+  }
+  .compositions .song {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .compositions .song__description {
+    max-width: 450px;
+    max-height: 325px;
+    padding: 20px 20px 20px 20px;
+  }
+  .compositions .song__name {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .compositions .song__about {
+    width: 380px;
+    font-weight: 14px;
+    line-height: 22px;
+  }
+  .compositions .song__button {
+    width: 150px;
+    height: 45px;
+  }
+  .compositions .song__visit {
+    margin-right: 10px;
+    font-size: 13px;
+  }
+  .compositions .song__number {
+    font-size: 10px;
+    margin-right: 10px;
+  }
+  .compositions .song__line {
+    width: 250px;
+  }
+  .compositions .song__video1 {
+    max-width: 450px;
+    max-height: 325px;
+  }
+  .compositions .song__video2 {
+    max-width: 450px;
+    max-height: 325px;
+  }
+  .compositions .song__video3 {
+    max-width: 450px;
+    max-height: 325px;
+  }
+}
+@media (max-width: 980px) {
+  .compositions {
+    margin: 0 30px 0;
+    height: initial;
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  .compositions .main-title {
+    font-size: 37px;
+  }
+  .compositions__description {
+    margin-bottom: 70px;
+  }
+  .compositions .song {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .compositions .song__description {
+    max-width: 350px;
+    max-height: 225px;
+    padding: 20px 20px 20px 20px;
+  }
+  .compositions .song__name {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .compositions .song__about {
+    width: 300px;
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 15px;
+  }
+  .compositions .song__button {
+    width: 100px;
+    height: 25px;
+  }
+  .compositions .song__visit {
+    margin-right: 5px;
+    font-size: 9px;
+  }
+  .compositions .song__number {
+    font-size: 10px;
+    margin-right: 5px;
+  }
+  .compositions .song__icon img {
+    margin-right: 3px;
+  }
+  .compositions .song__line {
+    width: 200px;
+  }
+  .compositions .song__video1 {
+    max-width: 350px;
+    max-height: 225px;
+    background-size: cover;
+    background-position: center;
+  }
+  .compositions .song__video2 {
+    max-width: 350px;
+    max-height: 225px;
+    background-size: cover;
+    background-position: center;
+  }
+  .compositions .song__video3 {
+    max-width: 350px;
+    max-height: 225px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 770px) {
+  .compositions {
+    margin: 0 30px 0;
+    height: initial;
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+  .compositions .main-title {
+    font-size: 35px;
+  }
+  .compositions__description {
+    margin-bottom: 70px;
+  }
+  .compositions .song {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  .compositions .song__description {
+    max-width: 520px;
+    max-height: 325px;
+    padding: 40px 20px 20px 20px;
+  }
+  .compositions .song__name {
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
+  .compositions .song__about {
+    width: 380px;
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 35px;
+  }
+  .compositions .song__button {
+    width: 140px;
+    height: 45px;
+  }
+  .compositions .song__visit {
+    margin-right: 7px;
+    font-size: 12px;
+  }
+  .compositions .song__number {
+    font-size: 10px;
+    margin-right: 10px;
+  }
+  .compositions .song__icon img {
+    margin-right: 6px;
+  }
+  .compositions .song__line {
+    width: 300px;
+  }
+  .compositions .song__video1 {
+    max-width: 520px;
+    max-height: 325px;
+    background-size: cover;
+    background-position: center;
+  }
+  .compositions .song__video2 {
+    max-width: 520px;
+    max-height: 325px;
+    background-size: cover;
+    background-position: center;
+  }
+  .compositions .song__video3 {
+    max-width: 520px;
+    max-height: 325px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 600px) {
+  .compositions {
+    margin: 0 30px 0;
+    height: initial;
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  .compositions .main-title {
+    font-size: 30px;
+  }
+  .compositions__description {
+    margin-bottom: 70px;
+  }
+  .compositions .song {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  .compositions .song__description {
+    max-width: 390px;
+    max-height: 250px;
+    padding: 15px 15px 15px 15px;
+  }
+  .compositions .song__name {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .compositions .song__about {
+    width: 320px;
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 20px;
+  }
+  .compositions .song__button {
+    width: 130px;
+    height: 40px;
+  }
+  .compositions .song__visit {
+    margin-right: 7px;
+    font-size: 12px;
+  }
+  .compositions .song__number {
+    font-size: 10px;
+    margin-right: 10px;
+  }
+  .compositions .song__icon img {
+    margin-right: 3px;
+  }
+  .compositions .song__line {
+    width: 230px;
+  }
+  .compositions .song__video1 {
+    max-width: 390px;
+    max-height: 250px;
+    background-size: cover;
+    background-position: center;
+  }
+  .compositions .song__video2 {
+    max-width: 390px;
+    max-height: 250px;
+    background-size: cover;
+    background-position: center;
+  }
+  .compositions .song__video3 {
+    max-width: 390px;
+    max-height: 250px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 470px) {
+  .compositions {
+    margin: 0 30px 0;
+    height: initial;
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  .compositions .main-title {
+    font-size: 27px;
+  }
+  .compositions__description {
+    margin-bottom: 60px;
+  }
+  .compositions .song {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  .compositions .song__description {
+    max-width: 300px;
+    max-height: 250px;
+    padding: 15px 15px 15px 15px;
+  }
+  .compositions .song__name {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .compositions .song__about {
+    width: 200px;
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 20px;
+  }
+  .compositions .song__button {
+    width: 114px;
+    height: 35px;
+    margin-right: 20px;
+  }
+  .compositions .song__visit {
+    margin-right: 5px;
+    font-size: 9px;
+  }
+  .compositions .song__number {
+    font-size: 9px;
+    margin-right: 10px;
+  }
+  .compositions .song__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .compositions .song__icon img {
+    width: 10px;
+    margin-bottom: 5px;
+  }
+  .compositions .song__line {
+    width: 230px;
+  }
+  .compositions .song__video1 {
+    max-width: 300px;
+    max-height: 250px;
+    background-size: cover;
+    background-position: center;
+  }
+  .compositions .song__video2 {
+    max-width: 300px;
+    max-height: 250px;
+    background-size: cover;
+    background-position: center;
+  }
+  .compositions .song__video3 {
+    max-width: 300px;
+    max-height: 250px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 370px) {
+  .compositions {
+    margin: 0 20px 0;
+    height: initial;
+    padding-top: 55px;
+    padding-bottom: 40px;
+  }
+  .compositions .main-title {
+    font-size: 25px;
+  }
+  .compositions__description {
+    margin-bottom: 50px;
+    font-size: 13px;
+  }
+  .compositions .song {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  .compositions .song__description {
+    max-width: 280px;
+    max-height: 240px;
+    padding: 15px 15px 15px 15px;
+  }
+  .compositions .song__data {
+    font-size: 13px;
+  }
+  .compositions .song__name {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .compositions .song__about {
+    width: 200px;
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 20px;
+  }
+  .compositions .song__button {
+    width: 119px;
+    height: 35px;
+    margin-right: 15px;
+  }
+  .compositions .song__visit {
+    margin-right: 3px;
+    font-size: 9px;
+  }
+  .compositions .song__number {
+    font-size: 9px;
+    margin-right: 10px;
+  }
+  .compositions .song__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .compositions .song__icon img {
+    width: 10px;
+    margin-bottom: 5px;
+  }
+  .compositions .song__line {
+    width: 230px;
+  }
+  .compositions .song__video1 {
+    max-width: 280px;
+    max-height: 240px;
+    background-size: cover;
+    background-position: center;
+  }
+  .compositions .song__video2 {
+    max-width: 280px;
+    max-height: 240px;
+    background-size: cover;
+    background-position: center;
+  }
+  .compositions .song__video3 {
+    max-width: 280px;
+    max-height: 240px;
+    background-size: cover;
+    background-position: center;
   }
 }
 * {

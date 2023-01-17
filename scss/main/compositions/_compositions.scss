@@ -17,13 +17,14 @@
         text-align: center;
         max-width: 690px;
         margin: 0 auto;
-        font-weight: 14px;
+        font-size: 14px;
         line-height: 24px;
         margin-bottom: 165px;
     }
 }
 .song {
         display:flex;
+        margin-bottom: 55px;
         &__description {
             width: 600px;
             height: 425px;
@@ -88,6 +89,7 @@
             width: 600px;
             height: 425px;
             background-image: url(../img/song1.png);
+            background-size: cover;
             display: flex;
             align-items: center;
         }
@@ -98,10 +100,12 @@
             width: 600px;
             height: 425px;
             background-image: url(../img/song2.png);
+            background-size: cover;
         }
         &__video3 {
             width: 600px;
             height: 425px;
             background-image: url(../img/song3.png);
+            background-size: cover;
         }
 }
