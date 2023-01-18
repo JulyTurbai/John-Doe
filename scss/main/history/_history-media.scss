@@ -1,0 +1,85 @@
+@media (max-width:$historyBP1) {
+    .history-block {
+        height: initial;
+        .history {
+            margin: 0 30px 0;
+            .history__main-text {
+                font-size: 16px;
+            }
+    }
+    
+}
+@media (max-width:$historyBP2) {
+    .history-block {
+        .history {
+            margin: 0 30px 0;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            .history__main-text {
+                margin-bottom: 40px;
+                font-size: 13px;
+            }
+            &__description {
+                font-size: 13px;
+            }
+            &__years {
+                margin-bottom: 60px;
+                font-size: 13px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:$historyBP3) {
+    .history-block {
+        .history {
+            margin: 0 30px 0;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            .history__main-text {
+                margin-bottom: 40px;
+                font-size: 13px;
+            }
+            &__description {
+                font-size: 12px;
+            }
+            &__years {
+                margin-bottom: 60px;
+                font-size: 12px;
+                }
+            }
+        }
+    }
+    @media (max-width:$historyBP3) {
+        .circles {
+            @include flex();
+            &__circle--active {
+                margin-right: 20px;
+            }
+            &__circle {
+                margin-right: 20px;
+            }
+            &__circle:last-child {
+                margin-right:0px;
+            }
+        }
+    }
+    @media (max-width:$historyBP4) {
+        .history-block {
+            .history {
+                margin: 0 20px 0;
+                .history__main-text {
+                    margin-bottom: 30px;
+                    font-size: 13px;
+                }
+                &__description {
+                    font-size: 12px;
+                    margin-bottom: 30px;
+                }
+                &__years {
+                    margin-bottom: 40px;
+                    font-size: 12px;
+                    }
+                }
+            }
+        }

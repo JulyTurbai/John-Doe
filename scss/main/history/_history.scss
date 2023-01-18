@@ -1,0 +1,64 @@
+.history-block {
+    @include flex(space-between,center, center);
+    max-height: 645px;
+    background-image: url(../img/ocean.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .history {
+        @include flex();
+        padding-top: 160px;
+        padding-bottom: 85px;
+        &__note {
+            margin-bottom: 50px;
+            @include flex;
+        }
+        &__main-text {
+            max-width: 885px;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+            line-height: 27px;
+            letter-spacing: 2px;
+            font-family:'Dosis', sans-serif;
+            text-transform: uppercase;
+            margin-bottom: 45px;
+        }
+        &__description {
+            max-width: 510px;
+            text-align: center;
+            margin: 0 auto;
+            font-family: Open Sans;
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 70px;
+            
+        }
+        &__years {
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 80px;
+            font-size: 14px;
+        }
+    }
+}
+.circles {
+    @include flex();
+    &__circle--active {
+        width: 11px;
+        height: 11px;
+        border: 2px solid white;
+        border-radius: 50px;
+        margin-right: 40px;
+    }
+    &__circle {
+        width: 11px;
+        height: 11px;
+        border: 2px solid white;
+        border-radius: 50px;
+        background: white;
+        margin-right: 40px;
+    }
+    &__circle:last-child {
+        margin-right:0px;
+    }
+}
