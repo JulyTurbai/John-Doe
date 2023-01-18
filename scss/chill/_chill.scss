@@ -1,0 +1,79 @@
+.chill-block {
+    .chill {
+        padding-top: 160px;
+        padding-bottom: 160px;
+        .chill-cards {
+            @include flex(space-around, center, center);
+            flex-wrap: wrap;
+            .card {
+                width: 380px;
+                height: 420px;
+                background: #f5f6f6;
+                padding: 35px 30px 35px;
+                margin-bottom: 30px;
+                &__data {
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+                &__line {
+                    width: 310px;
+                    border: 1px solid black;
+                    margin-bottom: 10px;
+                }
+                &__name {
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: white;
+                    margin-bottom: 45px;
+                }
+                .treck--long {
+                    font-size: 23px;
+                    color: black;
+                    margin-bottom: 23px;
+                }
+                &__treck {
+                    font-size: 23px;
+                    color: black;
+                    margin-bottom: 45px;
+                }
+                &__description {
+                    font-size: 14px;
+                    overflow: hidden;
+                    height: 140px;
+                }
+                
+                &--1 {
+                    background-image: url(../img/chill-card1.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                &--2 {
+                    background-image: url(../img/chill-card2.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                &--3 {
+                    background-image: url(../img/chill-card3.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                &--4 {
+                    background-image: url(../img/chill-card4.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                &--5 {
+                    background-image: url(../img/chill-card5.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                &--6 {
+                    background-image: url(../img/chill-card6.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}
