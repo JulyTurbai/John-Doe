@@ -313,7 +313,7 @@
   line-height: 24px;
   margin-bottom: 30px;
 }
-.album .album-button__hell {
+.album .album-button--hell {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,7 +335,7 @@
   font-weight: bold;
   margin-bottom: 115px;
 }
-.album .album-button__night {
+.album .album-button--night {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -357,7 +357,7 @@
   font-weight: bold;
   margin-bottom: 115px;
 }
-.album .album-button__smoke {
+.album .album-button--smoke {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,10 +464,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .discography-block .discography .album .album-button__hell {
+  .discography-block .discography .album .album-button--hell {
     margin-bottom: 50px;
   }
-  .discography-block .discography .album .album-button__night {
+  .discography-block .discography .album .album-button--night {
     margin-bottom: 50px;
   }
 }
@@ -514,15 +514,15 @@
   .discography-block .discography .album__info {
     width: initial;
   }
-  .discography-block .discography .album .album-button__hell {
+  .discography-block .discography .album .album-button--hell {
     width: 130px;
     height: 40px;
   }
-  .discography-block .discography .album .album-button__night {
+  .discography-block .discography .album .album-button--night {
     width: 130px;
     height: 40px;
   }
-  .discography-block .discography .album .album-button__smoke {
+  .discography-block .discography .album .album-button--smoke {
     width: 130px;
     height: 40px;
   }

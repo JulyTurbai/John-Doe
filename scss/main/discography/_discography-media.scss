@@ -63,10 +63,10 @@
                 
             }
             .album-button {
-                &__hell {
+                &--hell {
                     margin-bottom: 50px;
                 }
-                &__night {
+                &--night {
                     margin-bottom: 50px;
                     }
                 }
@@ -131,15 +131,15 @@
                     width: initial;
                 }
             .album-button {
-                &__hell {
+                &--hell {
                     width: 130px;
                     height: 40px;
                 }
-                &__night {
+                &--night {
                     width: 130px;
                     height: 40px;
                 }
-                &__smoke {
+                &--smoke {
                     width: 130px;
                     height: 40px;
                     }
