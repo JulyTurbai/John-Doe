@@ -77,13 +77,16 @@
                 justify-content: center;
                 .card {
                     padding: 20px 15px 30px;
-                    width: 300px;
-                    height: 350px;
+                    width: 350px;
+                    height: 330px;
                     &__line {
                         width: 200px;
                     }
                     &__name {
                         margin-bottom: 20px;
+                    }
+                    &__description {
+                        line-height: 20px;
                     }
                     .treck--long {
                         font-size: 19px;
@@ -104,17 +107,25 @@
         .chill {
             padding-top: 60px;
             padding-bottom: 30px;
-            margin: 0 20px 0;
+            margin: 0 10px 0;
             .chill-cards {
                 display: flex;
                 justify-content: center;
                 .card {
                     padding: 20px 15px 30px;
-                    width: 280px;
-                    height: 330px;
+                    width: 300px;
+                    height: 300px;
                     &__description {
                         line-height: 17.5px;
                         font-size: 13px;
+                    }
+                    &__treck {
+                        font-size: 16px;
+                        margin-bottom: 15px;
+                    }
+                    .treck--long {
+                        font-size: 16px;
+                        margin-bottom: 15px;
                     }
                 }
             

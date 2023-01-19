@@ -1182,7 +1182,7 @@
     margin-bottom: 30px;
   }
   .compositions .song__description {
-    max-width: 300px;
+    max-width: 380px;
     max-height: 250px;
     padding: 15px 15px 15px 15px;
   }
@@ -1206,7 +1206,7 @@
     font-size: 9px;
   }
   .compositions .song__number {
-    font-size: 9px;
+    font-size: 11px;
     margin-right: 10px;
   }
   .compositions .song__icon {
@@ -1217,32 +1217,32 @@
         flex-wrap: wrap;
   }
   .compositions .song__icon img {
-    width: 10px;
+    width: 12px;
     margin-bottom: 5px;
   }
   .compositions .song__line {
     width: 230px;
   }
   .compositions .song__video1 {
-    max-width: 300px;
+    max-width: 380px;
     max-height: 250px;
     background-size: cover;
     background-position: center;
   }
   .compositions .song__video2 {
-    max-width: 300px;
+    max-width: 380px;
     max-height: 250px;
     background-size: cover;
     background-position: center;
   }
   .compositions .song__video3 {
-    max-width: 300px;
+    max-width: 380px;
     max-height: 250px;
     background-size: cover;
     background-position: center;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 450px) {
   .compositions {
     margin: 0 20px 0;
     height: initial;
@@ -1269,7 +1269,7 @@
     margin-bottom: 30px;
   }
   .compositions .song__description {
-    max-width: 280px;
+    max-width: 370px;
     max-height: 240px;
     padding: 15px 15px 15px 15px;
   }
@@ -1314,19 +1314,200 @@
     width: 230px;
   }
   .compositions .song__video1 {
-    max-width: 280px;
+    max-width: 370px;
     max-height: 240px;
     background-size: cover;
     background-position: center;
   }
   .compositions .song__video2 {
-    max-width: 280px;
+    max-width: 370px;
     max-height: 240px;
     background-size: cover;
     background-position: center;
   }
   .compositions .song__video3 {
-    max-width: 280px;
+    max-width: 370px;
+    max-height: 240px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 420px) {
+  .compositions {
+    margin: 0 20px 0;
+    height: initial;
+    padding-top: 55px;
+    padding-bottom: 40px;
+  }
+  .compositions .main-title {
+    font-size: 25px;
+  }
+  .compositions__description {
+    margin-bottom: 50px;
+    font-size: 13px;
+  }
+  .compositions .song {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  .compositions .song__description {
+    max-width: 340px;
+    max-height: 240px;
+    padding: 15px 15px 15px 15px;
+  }
+  .compositions .song__data {
+    font-size: 13px;
+  }
+  .compositions .song__name {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .compositions .song__about {
+    width: 200px;
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 20px;
+  }
+  .compositions .song__button {
+    width: 119px;
+    height: 35px;
+    margin-right: 15px;
+  }
+  .compositions .song__visit {
+    margin-right: 3px;
+    font-size: 9px;
+  }
+  .compositions .song__number {
+    font-size: 9px;
+    margin-right: 10px;
+  }
+  .compositions .song__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .compositions .song__icon img {
+    width: 10px;
+    margin-bottom: 5px;
+  }
+  .compositions .song__line {
+    width: 230px;
+  }
+  .compositions .song__video1 {
+    max-width: 340px;
+    max-height: 240px;
+    background-size: cover;
+    background-position: center;
+  }
+  .compositions .song__video2 {
+    max-width: 340px;
+    max-height: 240px;
+    background-size: cover;
+    background-position: center;
+  }
+  .compositions .song__video3 {
+    max-width: 340px;
+    max-height: 240px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 380px) {
+  .compositions {
+    margin: 0 10px 0;
+    height: initial;
+    padding-top: 55px;
+    padding-bottom: 40px;
+  }
+  .compositions .main-title {
+    font-size: 25px;
+    margin-bottom: 35px;
+  }
+  .compositions__description {
+    margin-bottom: 50px;
+    font-size: 13px;
+  }
+  .compositions .song {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  .compositions .song__description {
+    max-width: 300px;
+    max-height: 240px;
+    padding: 10px 10px 10px 10px;
+  }
+  .compositions .song__data {
+    font-size: 13px;
+  }
+  .compositions .song__name {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .compositions .song__about {
+    width: 200px;
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 20px;
+  }
+  .compositions .song__button {
+    width: 119px;
+    height: 35px;
+    margin-right: 15px;
+  }
+  .compositions .song__visit {
+    margin-right: 3px;
+    font-size: 9px;
+  }
+  .compositions .song__number {
+    font-size: 9px;
+    margin-right: 10px;
+  }
+  .compositions .song__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .compositions .song__icon img {
+    width: 10px;
+    margin-bottom: 5px;
+  }
+  .compositions .song__line {
+    width: 200px;
+  }
+  .compositions .song__video1 {
+    max-width: 300px;
+    max-height: 240px;
+    background-size: cover;
+    background-position: center;
+  }
+  .compositions .song__video2 {
+    max-width: 300px;
+    max-height: 240px;
+    background-size: cover;
+    background-position: center;
+  }
+  .compositions .song__video3 {
+    max-width: 300px;
     max-height: 240px;
     background-size: cover;
     background-position: center;
@@ -1709,14 +1890,17 @@
   }
   .chill-block .chill .chill-cards .card {
     padding: 20px 15px 30px;
-    width: 300px;
-    height: 350px;
+    width: 350px;
+    height: 330px;
   }
   .chill-block .chill .chill-cards .card__line {
     width: 200px;
   }
   .chill-block .chill .chill-cards .card__name {
     margin-bottom: 20px;
+  }
+  .chill-block .chill .chill-cards .card__description {
+    line-height: 20px;
   }
   .chill-block .chill .chill-cards .card .treck--long {
     font-size: 19px;
@@ -1727,11 +1911,11 @@
     margin-bottom: 15px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 390px) {
   .chill-block .chill {
     padding-top: 60px;
     padding-bottom: 30px;
-    margin: 0 20px 0;
+    margin: 0 10px 0;
   }
   .chill-block .chill .chill-cards {
     display: -webkit-box;
@@ -1743,12 +1927,20 @@
   }
   .chill-block .chill .chill-cards .card {
     padding: 20px 15px 30px;
-    width: 280px;
-    height: 330px;
+    width: 300px;
+    height: 300px;
   }
   .chill-block .chill .chill-cards .card__description {
     line-height: 17.5px;
     font-size: 13px;
+  }
+  .chill-block .chill .chill-cards .card__treck {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .chill-block .chill .chill-cards .card .treck--long {
+    font-size: 16px;
+    margin-bottom: 15px;
   }
 }
 .events-block {
@@ -1885,6 +2077,148 @@
     font-size: 20px;
   }
 }
+.story-block {
+  min-height: 1250px;
+  background-image: url(../img/story-back.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-top: 155px;
+  display: none;
+}
+.story-block .story {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.story-block .story__story-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.story-block .story__story-content .main-title {
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #5b5c5a;
+  font-size: 50px;
+  letter-spacing: 5px;
+  text-decoration: line-through;
+  margin-bottom: 55px;
+}
+.story-block .story__description {
+  max-width: 810px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 180px;
+}
+
+.calendar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: none;
+  margin-bottom: 40px;
+}
+.calendar__line--first {
+  width: 147px;
+  margin-right: 35px;
+  margin-left: 0px;
+}
+.calendar__line {
+  width: 147px;
+  margin-right: 35px;
+  margin-left: 40px;
+}
+.calendar__line--last {
+  width: 147px;
+  margin-right: 0px;
+  margin-left: 40px;
+}
+.calendar__data {
+  font-size: 35px;
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+}
+.calendar__data--middle {
+  font-size: 35px;
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+  color: #5a5a58;
+}
+.calendar__dot1 {
+  width: 8px;
+  height: 8px;
+  background: #5b5c5a;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+.calendar__dot2 {
+  width: 8px;
+  height: 8px;
+  background: #5b5c5a;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+
+.brittany-tolman {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.brittany-tolman__description {
+  width: 200px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 19px;
+  color: #5a5a58;
+}
+
 * {
   margin: 0;
   padding: 0;

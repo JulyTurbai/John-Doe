@@ -1,0 +1,90 @@
+.story-block {
+    min-height: 1250px;
+    background-image: url(../img/story-back.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-top: 155px;
+    display: none;
+    .story {
+        @include flex();
+        &__story-content {
+            @include flex();
+            flex-wrap: wrap;
+            flex-direction: column;
+            .main-title {
+                text-align: center;
+                font-family:'Dosis', sans-serif;
+                font-weight: lighter;
+                text-transform: uppercase;
+                color: #5b5c5a;
+                font-size: 50px;
+                letter-spacing: 5px;
+                text-decoration: line-through;
+                margin-bottom: 55px;
+            }
+        }
+        &__description {
+            max-width: 810px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 180px;
+        }
+    }
+}
+.calendar {
+    @include flex();
+    display: none;
+    margin-bottom: 40px;
+    &__line--first {
+        width: 147px;
+        margin-right: 35px;
+        margin-left: 0px;
+    }
+    &__line {
+        width: 147px;
+        margin-right: 35px;
+        margin-left: 40px;
+    }
+    &__line--last {
+        width: 147px;
+        margin-right: 0px;
+        margin-left: 40px;
+    }
+    &__data {
+        font-size: 35px;
+        font-family:'Dosis', sans-serif;
+        text-transform: uppercase;
+    }
+    &__data--middle {
+        font-size: 35px;
+        font-family:'Dosis', sans-serif;
+        text-transform: uppercase;
+        color: #5a5a58;
+    }
+    &__dot1 {
+        width: 8px;
+        height: 8px;
+        background: #5b5c5a;
+        border-radius: 50%;
+        margin-right: 50px;
+    }
+    &__dot2 {
+        width: 8px;
+        height: 8px;
+        background: #5b5c5a;
+        border-radius: 50%;
+        margin-left: 50px;
+    }
+
+}
+.brittany-tolman {
+       @include flex();
+       &__description {
+            width: 200px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 19px;
+            color: #5a5a58;
+       }
+}
