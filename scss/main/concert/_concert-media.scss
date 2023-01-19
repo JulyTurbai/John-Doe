@@ -65,12 +65,12 @@
 @media (max-width: $concertBP6) {
     .concert-block {
         .concert {
+            padding-top: 60px;
             .main-title {
                 font-size: 35px;
             }
-            padding-top: 90px;
             &__description {
-                padding-bottom: 100px;
+                padding-bottom: 60px;
             }
             .tour {
                 &__line {
