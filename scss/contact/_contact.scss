@@ -1,0 +1,85 @@
+.contact-block {
+    min-height: 980px;
+    background-image: url(../img/contact-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top: 240px;
+    padding-right: 55px;
+    .contact {
+        @include flex(flex-end, center, center);
+        &__contact-content {
+            .main-title {
+                text-align: start;
+                font-family:'Dosis', sans-serif;
+                font-weight: lighter;
+                text-transform: uppercase;
+                color: #454545;
+                font-size: 50px;
+                letter-spacing: 5px;
+                text-decoration: line-through;
+                margin-bottom: 30px;
+            }
+        }
+        &__adress {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        &__phone {
+            font-size: 14px;
+            margin-bottom: 90px;
+        }
+        &__form {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin-right: 70px;
+        }
+        &__label {
+            border: none;
+            margin-bottom: 50px;
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
+        }
+        &__input {
+            width: 385px;
+            border: none;
+            background: none;
+        }
+        &__input:focus {
+            outline: none;
+        }
+        &__send {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            border: none;
+            background: none;
+            width: 50px;
+        }
+        &__contact-actions {
+            @include flex();
+            .social {
+                display: flex;
+                &__line {
+                    margin-right: 20px;
+                }
+                &__items {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    margin-top: 25px;
+                }
+                &__item {
+                    margin-bottom: 70px;
+                }
+                &__item:first-child {
+                    margin-right: 6px;
+                }
+            }   
+            
+        }
+    }
+}

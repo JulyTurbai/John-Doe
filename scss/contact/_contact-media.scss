@@ -1,0 +1,172 @@
+@media (max-width:$contactBP1) {
+    .contact-block {
+        min-height: 800px;
+        padding-top: 100px;
+        .contact {
+            margin: 0 20px 0;
+            &__contact-content {
+                .main-title {
+                    font-size: 37px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:$contactBP2) {
+    .contact-block {
+        min-height: 700px;
+        padding-top: 0px;
+        padding-right: 0;
+        @include flex();
+        .contact {
+            margin: 0 20px 0;
+            &__contact-content {
+                .main-title {
+                    font-size: 37px;
+                }
+            }
+            &__form {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                margin-right: 0px;
+            }
+            &__input {
+                max-width: 385px;
+            }
+            &__label {
+                margin-bottom: 30px;
+            }
+            &__contact-actions {
+                display: flex;
+                flex-direction: column;
+                .social {
+                    &__line {
+                        display: none;
+                    }
+                    &__items {
+                        width: 300px;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: nowrap;
+                        flex-direction: initial;
+                        padding: 0 40px 10px;
+                        border-bottom: 1px solid black;
+                        margin-top: 50px;
+                    }
+                    &__item {
+                        margin-bottom: 20px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+@media (max-width:$contactBP3) {
+    .contact-block {
+        min-height: 700px;
+        padding-top: 0px;
+        padding-right: 0;
+        @include flex();
+        .contact {
+            margin: 0 20px 0;
+            &__contact-content {
+                .main-title {
+                    font-size: 37px;
+                }
+            }
+            &__form {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                margin-right: 0px;
+            }
+            &__input {
+                width: 300px;
+            }
+            &__label {
+                margin-bottom: 30px;
+            }
+            &__contact-actions {
+                display: flex;
+                flex-direction: column;
+                .social {
+                    &__line {
+                        display: none;
+                    }
+                    &__items {
+                        width: 200px;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: nowrap;
+                        flex-direction: initial;
+                        padding: 0 40px 10px;
+                        border-bottom: 1px solid black;
+                        margin-top: 50px;
+                    }
+                    &__item {
+                        margin-bottom: 20px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+@media (max-width:$contactBP4) {
+    .contact-block {
+        min-height: initial;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-right: 0;
+        @include flex();
+        .contact {
+            margin: 0 20px 0;
+            &__contact-content {
+                .main-title {
+                    font-size: 27px;
+                }
+            }
+            &__phone {
+                margin-bottom: 50px;
+            }
+            &__form {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                margin-right: 0px;
+            }
+            &__input {
+                width: 250px;
+            }
+            &__label {
+                margin-bottom: 25px;
+                padding-bottom:5px;
+            }
+            &__contact-actions {
+                display: flex;
+                flex-direction: column;
+                .social {
+                    &__line {
+                        display: none;
+                    }
+                    &__items {
+                        width: 200px;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: nowrap;
+                        flex-direction: initial;
+                        padding: 0 40px 10px;
+                        border-bottom: 1px solid black;
+                        margin-top: 50px;
+                    }
+                    &__item {
+                        margin-bottom: 20px;
+                    }
+                }
+
+            }
+        }
+    }
+}

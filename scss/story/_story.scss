@@ -4,7 +4,6 @@
     background-position: bottom;
     background-repeat: no-repeat;
     padding-top: 155px;
-    display: none;
     .story {
         @include flex();
         &__story-content {
@@ -34,7 +33,6 @@
 }
 .calendar {
     @include flex();
-    display: none;
     margin-bottom: 40px;
     &__line--first {
         width: 147px;
