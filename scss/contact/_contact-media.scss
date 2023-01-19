@@ -1,7 +1,7 @@
 @media (max-width:$contactBP1) {
     .contact-block {
-        min-height: 800px;
         padding-top: 100px;
+        padding-bottom: 150px;
         .contact {
             margin: 0 20px 0;
             &__contact-content {
@@ -14,9 +14,8 @@
 }
 @media (max-width:$contactBP2) {
     .contact-block {
-        min-height: 700px;
-        padding-top: 0px;
         padding-right: 0;
+        padding-bottom: 100px;
         @include flex();
         .contact {
             margin: 0 20px 0;
@@ -65,9 +64,8 @@
 }
 @media (max-width:$contactBP3) {
     .contact-block {
-        min-height: 700px;
-        padding-top: 0px;
-        padding-right: 0;
+       padding-bottom: 30px;
+       padding-top: 70px;
         @include flex();
         .contact {
             margin: 0 20px 0;
@@ -118,7 +116,7 @@
     .contact-block {
         min-height: initial;
         padding-top: 30px;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         padding-right: 0;
         @include flex();
         .contact {

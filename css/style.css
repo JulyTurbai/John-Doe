@@ -2688,7 +2688,7 @@
   }
 }
 .contact-block {
-  min-height: 980px;
+  padding-bottom: 290px;
   background-image: url(../img/contact-back.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -2814,8 +2814,8 @@
 
 @media (max-width: 800px) {
   .contact-block {
-    min-height: 800px;
     padding-top: 100px;
+    padding-bottom: 150px;
   }
   .contact-block .contact {
     margin: 0 20px 0;
@@ -2826,9 +2826,8 @@
 }
 @media (max-width: 700px) {
   .contact-block {
-    min-height: 700px;
-    padding-top: 0px;
     padding-right: 0;
+    padding-bottom: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2903,9 +2902,8 @@
 }
 @media (max-width: 450px) {
   .contact-block {
-    min-height: 700px;
-    padding-top: 0px;
-    padding-right: 0;
+    padding-bottom: 30px;
+    padding-top: 70px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2982,7 +2980,7 @@
   .contact-block {
     min-height: initial;
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     padding-right: 0;
     display: -webkit-box;
     display: -ms-flexbox;
