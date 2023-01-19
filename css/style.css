@@ -700,6 +700,9 @@
   .concert-block .concert {
     margin: 0 20px 0;
   }
+  .concert-block .concert .main-title {
+    font-size: 30px;
+  }
   .concert-block .concert .tour__button {
     width: 130px;
     height: 40px;
@@ -707,13 +710,13 @@
 }
 @media (max-width: 350px) {
   .concert-block .concert {
-    padding-top: 90px;
+    padding-top: 70px;
   }
   .concert-block .concert .main-title {
-    font-size: 25px;
+    font-size: 27px;
   }
   .concert-block .concert__description {
-    padding-bottom: 100px;
+    padding-bottom: 70px;
   }
   .concert-block .concert .tour__line {
     width: 250px;

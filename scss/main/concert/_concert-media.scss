@@ -87,6 +87,9 @@
     .concert-block {
         .concert {
             margin: 0 20px 0;
+            .main-title {
+                font-size: 30px;
+            }
             .tour {
                &__button {
                 width: 130px;
@@ -99,12 +102,12 @@
 @media (max-width: $concertBP7) {
     .concert-block {
         .concert {
+            padding-top: 70px;
             .main-title {
-                font-size: 25px;
+                font-size: 27px;
             }
-            padding-top: 90px;
             &__description {
-                padding-bottom: 100px;
+                padding-bottom: 70px;
             }
             .tour {
                 &__line {
