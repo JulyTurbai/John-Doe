@@ -68,9 +68,16 @@
                 margin-right: 10px
             }
         }
+        &__icon--icon-last {
+            display: flex;
+            align-items: center;
+            }
         &__number {
             font-size: 12px;
             margin-right: 20px;
+        }
+        &__text {
+            margin-right: 10px;
         }
         &__button {
             @include flex();
