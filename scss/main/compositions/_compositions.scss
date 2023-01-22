@@ -1,5 +1,4 @@
 .compositions {
-    height: 1990px;
     padding-top: 160px;
     padding-bottom: 160px;
     .main-title {
@@ -25,8 +24,9 @@
 .song {
         display:flex;
         margin-bottom: 55px;
+        min-height: 425px;
         &__description {
-            width: 600px;
+            max-width: 600px;
             height: 425px;
             background: #f5f6f6;
             padding: 35px 55px 35px 35px;
@@ -37,18 +37,18 @@
             margin-bottom: 10px;
         }
         &__line {
-            width: 395px;
+            max-width: 395px;
             border: 1px solid black;
         }
         &__name {
             font-size: 23px;
             color: black;
             margin-top: 10px;
-             margin-bottom: 40px;
+            margin-bottom: 40px;
         }
         &__about {
             height: 70px;
-            width: 505px;
+            max-width: 505px;
             overflow: hidden;
             font-weight: 14px;
             line-height: 24px;
@@ -81,10 +81,11 @@
         }
         &__button {
             @include flex();
-            width: 195px;
+            max-width: 195px;
             height: 55px;
             border: 1px solid #b5b5b5;
             margin-right: 35px;
+            padding: 20px;
         }
         &__visit {
             margin-right: 15px;
@@ -92,27 +93,12 @@
             font-size: 14px;
             font-weight: bold;
         }
-        &__video1 {
+        &__video {
             width: 600px;
             height: 425px;
-            background-image: url(../img/song1.png);
-            background-size: cover;
-            display: flex;
-            align-items: center;
+           
+           
+            
         }
-        &__video2 {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            width: 600px;
-            height: 425px;
-            background-image: url(../img/song2.png);
-            background-size: cover;
-        }
-        &__video3 {
-            width: 600px;
-            height: 425px;
-            background-image: url(../img/song3.png);
-            background-size: cover;
-        }
+        
 }

@@ -723,7 +723,6 @@
   }
 }
 .compositions {
-  height: 1990px;
   padding-top: 160px;
   padding-bottom: 160px;
 }
@@ -752,9 +751,10 @@
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 55px;
+  min-height: 425px;
 }
 .song__description {
-  width: 600px;
+  max-width: 600px;
   height: 425px;
   background: #f5f6f6;
   padding: 35px 55px 35px 35px;
@@ -765,7 +765,7 @@
   margin-bottom: 10px;
 }
 .song__line {
-  width: 395px;
+  max-width: 395px;
   border: 1px solid black;
 }
 .song__name {
@@ -776,7 +776,7 @@
 }
 .song__about {
   height: 70px;
-  width: 505px;
+  max-width: 505px;
   overflow: hidden;
   font-weight: 14px;
   line-height: 24px;
@@ -835,10 +835,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 195px;
+  max-width: 195px;
   height: 55px;
   border: 1px solid #b5b5b5;
   margin-right: 35px;
+  padding: 20px;
 }
 .song__visit {
   margin-right: 15px;
@@ -846,46 +847,52 @@
   font-size: 14px;
   font-weight: bold;
 }
-.song__video1 {
+.song__video {
   width: 600px;
   height: 425px;
-  background-image: url(../img/song1.png);
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.song__video2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 600px;
-  height: 425px;
-  background-image: url(../img/song2.png);
-  background-size: cover;
-}
-.song__video3 {
-  width: 600px;
-  height: 425px;
-  background-image: url(../img/song3.png);
-  background-size: cover;
 }
 
 @media (max-width: 1330px) {
-  .compositions {
-    margin: 0 30px 0;
+  .songs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .songs .song__reactions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .songs .song__button {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .songs .song__about {
+    max-width: initial;
+  }
+  .songs .song__video {
     height: initial;
+    width: initial;
+  }
+}
+@media (max-width: 1200px) {
+  .compositions {
     padding-top: 100px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
   .compositions .main-title {
     font-size: 45px;
@@ -893,160 +900,61 @@
   .compositions__description {
     margin-bottom: 100px;
   }
-  .compositions .song {
+  .songs .song__description {
+    padding: 20px 20px 21px 20px;
+    height: initial;
+  }
+  .songs .song__reactions {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .compositions .song__description {
-    max-width: 450px;
-    height: initial;
-    padding: 20px 20px 20px 20px;
-  }
-  .compositions .song__name {
+  .songs .song__name {
     font-size: 20px;
-    margin-bottom: 25px;
   }
-  .compositions .song__about {
-    width: 380px;
-    font-weight: 14px;
-    line-height: 22px;
-  }
-  .compositions .song__button {
-    width: 150px;
-    height: 45px;
-  }
-  .compositions .song__visit {
-    margin-right: 10px;
-    font-size: 13px;
-  }
-  .compositions .song__number {
-    font-size: 10px;
-    margin-right: 10px;
-  }
-  .compositions .song--number-last {
-    font-size: 10px;
-    margin-right: 10px;
-  }
-  .compositions .song__line {
-    width: 250px;
-  }
-  .compositions .song__video1 {
-    max-width: 450px;
-    max-height: 325px;
-  }
-  .compositions .song__video2 {
-    max-width: 450px;
-    max-height: 325px;
-  }
-  .compositions .song__video3 {
-    max-width: 450px;
-    max-height: 325px;
+  .songs .song__about {
+    height: 70px;
   }
 }
-@media (max-width: 980px) {
+@media (max-width: 920px) {
   .compositions {
-    margin: 0 30px 0;
-    height: initial;
     padding-top: 100px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
   .compositions .main-title {
-    font-size: 37px;
+    font-size: 45px;
   }
   .compositions__description {
-    margin-bottom: 70px;
-  }
-  .compositions .song {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .compositions .song__description {
-    max-width: 350px;
-    max-height: 225px;
-    padding: 20px 20px 20px 20px;
-  }
-  .compositions .song__name {
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-  .compositions .song__about {
-    width: 300px;
-    font-size: 12px;
-    line-height: 17px;
-    margin-bottom: 15px;
-  }
-  .compositions .song__button {
-    width: 100px;
-    height: 25px;
-  }
-  .compositions .song__visit {
-    margin-right: 5px;
-    font-size: 9px;
-  }
-  .compositions .song__number {
-    font-size: 10px;
-    margin-right: 5px;
-  }
-  .compositions .song--number-last {
-    font-size: 10px;
-    margin-right: 5px;
-  }
-  .compositions .song__icon {
-    margin-right: 3px;
-  }
-  .compositions .song--icon-last {
-    margin-right: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 50px;
-  }
-  .compositions .song__line {
-    width: 200px;
-  }
-  .compositions .song__video1 {
-    max-width: 350px;
-    max-height: 225px;
-    background-size: cover;
-    background-position: center;
-  }
-  .compositions .song__video2 {
-    max-width: 350px;
-    max-height: 225px;
-    background-size: cover;
-    background-position: center;
-  }
-  .compositions .song__video3 {
-    max-width: 350px;
-    max-height: 225px;
-    background-size: cover;
-    background-position: center;
-  }
-}
-@media (max-width: 770px) {
-  .compositions {
-    margin: 0 30px 0;
+    margin-bottom: 100px;
     height: initial;
-    padding-top: 70px;
-    padding-bottom: 80px;
   }
-  .compositions .main-title {
-    font-size: 35px;
+  .songs .song {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    min-height: initial;
   }
-  .compositions__description {
-    margin-bottom: 70px;
+  .songs .song__description {
+    padding: 20px 20px 21px 20px;
   }
-  .compositions .song {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .songs .song__reactions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1054,157 +962,47 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 30px;
   }
-  .compositions .song__description {
-    max-width: 520px;
-    max-height: 325px;
-    padding: 40px 20px 20px 20px;
+  .songs .song__name {
+    font-size: 20px;
   }
-  .compositions .song__name {
-    font-size: 16px;
-    margin-bottom: 35px;
+  .songs .song__about {
+    height: initial;
   }
-  .compositions .song__about {
-    width: 380px;
-    font-size: 12px;
-    line-height: 17px;
-    margin-bottom: 35px;
+}
+@media (max-width: 700px) {
+  .compositions {
+    padding-top: 70px;
+    padding-bottom: 30px;
   }
-  .compositions .song__button {
-    width: 140px;
-    height: 45px;
+  .compositions .main-title {
+    font-size: 32px;
+    margin: 0 20px 0;
   }
-  .compositions .song__visit {
-    margin-right: 7px;
-    font-size: 12px;
+  .compositions__description {
+    margin-bottom: 100px;
+    margin: 0 20px 70px;
   }
-  .compositions .song__number {
-    font-size: 10px;
-    margin-right: 10px;
-  }
-  .compositions .song__icon {
-    margin-right: 6px;
-  }
-  .compositions .song--icon-last {
-    margin-right: 0px;
+  .songs .song {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .compositions .song__line {
-    width: 300px;
-  }
-  .compositions .song__video1 {
-    max-width: 520px;
-    max-height: 325px;
-    background-size: cover;
-    background-position: center;
-  }
-  .compositions .song__video2 {
-    max-width: 520px;
-    max-height: 325px;
-    background-size: cover;
-    background-position: center;
-  }
-  .compositions .song__video3 {
-    max-width: 520px;
-    max-height: 325px;
-    background-size: cover;
-    background-position: center;
-  }
-}
-@media (max-width: 600px) {
-  .compositions {
-    margin: 0 30px 0;
-    height: initial;
-    padding-top: 70px;
-    padding-bottom: 40px;
-  }
-  .compositions .main-title {
-    font-size: 30px;
-  }
-  .compositions__description {
-    margin-bottom: 70px;
-  }
-  .compositions .song {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 30px;
-  }
-  .compositions .song__description {
-    max-width: 390px;
-    max-height: 420px;
-    padding: 15px 15px 15px 15px;
-  }
-  .compositions .song__name {
-    font-size: 16px;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     margin-bottom: 20px;
   }
-  .compositions .song__about {
-    width: 320px;
-    font-size: 14px;
-    line-height: 17px;
-    margin-bottom: 10px;
-    height: 200px;
+  .songs .song__description {
+    padding: 20px 20px 21px 20px;
   }
-  .compositions .song__button {
-    width: 180px;
-    height: 55px;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-  .compositions .song__visit {
-    margin-right: 15px;
-    font-size: 16px;
-  }
-  .compositions .song__number {
-    font-size: 14px;
-    margin-right: 15px;
-  }
-  .compositions .song__icon {
-    margin-right: 15px;
-  }
-  .compositions .song--icon-last {
-    margin-right: 0px;
-  }
-  .compositions .song__line {
-    width: 230px;
-  }
-  .compositions .song__video1 {
-    max-width: 390px;
-    max-height: 250px;
-    background-size: cover;
-    background-position: center;
-  }
-  .compositions .song__video2 {
-    max-width: 390px;
-    max-height: 250px;
-    background-size: cover;
-    background-position: center;
-  }
-  .compositions .song__video3 {
-    max-width: 390px;
-    max-height: 250px;
-    background-size: cover;
-    background-position: center;
-  }
-  .compositions .song__reactions {
+  .songs .song__reactions {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1213,219 +1011,24 @@
         -ms-flex-align: center;
             align-items: center;
   }
-}
-@media (max-width: 470px) {
-  .compositions {
-    margin: 0 30px 0;
-    height: initial;
-    padding-top: 70px;
-    padding-bottom: 40px;
-  }
-  .compositions .main-title {
-    font-size: 27px;
-  }
-  .compositions__description {
-    margin-bottom: 60px;
-  }
-  .compositions .song {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 30px;
-  }
-  .compositions .song__description {
-    max-width: 380px;
-    max-height: 420px;
-    padding: 20px 15px 15px 20px;
-  }
-  .compositions .song__name {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  .compositions .song__about {
-    width: 300px;
-    font-size: 12px;
-    line-height: 17px;
-    margin-bottom: 0px;
-  }
-  .compositions .song__line {
-    width: 230px;
-  }
-  .compositions .song__video1 {
-    max-width: 380px;
-    max-height: 250px;
-    background-size: cover;
-    background-position: center;
-  }
-  .compositions .song__video2 {
-    max-width: 380px;
-    max-height: 250px;
-    background-size: cover;
-    background-position: center;
-  }
-  .compositions .song__video3 {
-    max-width: 380px;
-    max-height: 250px;
-    background-size: cover;
-    background-position: center;
+  .songs .song__name {
+    font-size: 20px;
   }
 }
 @media (max-width: 450px) {
   .compositions {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+  .compositions .main-title {
+    font-size: 27px;
     margin: 0 20px 0;
-    height: initial;
-    padding-top: 55px;
-    padding-bottom: 40px;
-  }
-  .compositions .main-title {
-    font-size: 25px;
   }
   .compositions__description {
-    margin-bottom: 50px;
-    font-size: 13px;
+    margin-bottom: 100px;
+    margin: 0 20px 70px;
   }
-  .compositions .song {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 30px;
-  }
-  .compositions .song__description {
-    max-width: 370px;
-  }
-  .compositions .song__data {
-    font-size: 13px;
-  }
-  .compositions .song__about {
-    font-size: 12px;
-    line-height: 17px;
-    margin-bottom: 20px;
-  }
-  .compositions .song__line {
-    width: 230px;
-  }
-  .compositions .song__video1 {
-    max-width: 370px;
-    max-height: 240px;
-    background-size: cover;
-    background-position: center;
-  }
-  .compositions .song__video2 {
-    max-width: 370px;
-    max-height: 240px;
-    background-size: cover;
-    background-position: center;
-  }
-  .compositions .song__video3 {
-    max-width: 370px;
-    max-height: 240px;
-    background-size: cover;
-    background-position: center;
-  }
-}
-@media (max-width: 420px) {
-  .compositions {
-    margin: 0 20px 0;
-    height: initial;
-    padding-top: 55px;
-    padding-bottom: 40px;
-  }
-  .compositions .main-title {
-    font-size: 25px;
-  }
-  .compositions__description {
-    margin-bottom: 50px;
-    font-size: 13px;
-  }
-  .compositions .song {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 30px;
-  }
-  .compositions .song__description {
-    max-width: 340px;
-  }
-  .compositions .song__about {
-    width: 260px;
-    height: 170px;
-  }
-  .compositions .song__data {
-    font-size: 13px;
-  }
-  .compositions .song__line {
-    width: 230px;
-  }
-  .compositions .song__number {
-    font-size: 11px;
-    margin-right: 0px;
-  }
-  .compositions .song__video1 {
-    max-width: 340px;
-    max-height: 240px;
-    background-size: cover;
-    background-position: center;
-  }
-  .compositions .song__video2 {
-    max-width: 340px;
-    max-height: 240px;
-    background-size: cover;
-    background-position: center;
-  }
-  .compositions .song__video3 {
-    max-width: 340px;
-    max-height: 240px;
-    background-size: cover;
-    background-position: center;
-  }
-}
-@media (max-width: 380px) {
-  .compositions {
-    margin: 0 10px 0;
-    height: initial;
-    padding-top: 55px;
-    padding-bottom: 40px;
-  }
-  .compositions .main-title {
-    font-size: 25px;
-    margin-bottom: 0px;
-  }
-  .compositions__description {
-    margin-bottom: 50px;
-    font-size: 13px;
-  }
-  .compositions .song {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 30px;
-  }
-  .compositions .song__description {
-    max-width: 300px;
+  .songs .song {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1433,33 +1036,30 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
-  .compositions .song__data {
-    font-size: 13px;
+  .songs .song__description {
+    padding: 20px 20px 21px 20px;
   }
-  .compositions .song__line {
-    width: 200px;
+  .songs .song__about {
+    margin-bottom: 40px;
   }
-  .compositions .song__video1 {
-    max-width: 300px;
-    max-height: 270px;
-    background-size: cover;
-    background-position: center;
+  .songs .song__reactions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .compositions .song__video2 {
-    max-width: 300px;
-    max-height: 270px;
-    background-size: cover;
-    background-position: center;
-  }
-  .compositions .song__video3 {
-    max-width: 300px;
-    max-height: 270px;
-    background-size: cover;
-    background-position: center;
+  .songs .song__name {
+    font-size: 20px;
   }
 }
 .history-block {
@@ -1612,10 +1212,10 @@
   }
   .history-block .history .history__main-text {
     margin-bottom: 40px;
-    font-size: 13px;
+    font-size: 17px;
   }
   .history-block .history__description {
-    font-size: 12px;
+    font-size: 14px;
   }
   .history-block .history__years {
     margin-bottom: 60px;
@@ -1654,7 +1254,6 @@
   }
   .history-block .history .history__main-text {
     margin-bottom: 30px;
-    font-size: 13px;
   }
   .history-block .history__description {
     font-size: 12px;
@@ -1662,7 +1261,6 @@
   }
   .history-block .history__years {
     margin-bottom: 40px;
-    font-size: 12px;
   }
 }
 .chill-block .chill {
@@ -1758,7 +1356,6 @@
   .chill-block .chill {
     padding-top: 100px;
     padding-bottom: 100px;
-    margin: 0 30px 0;
   }
   .chill-block .chill .chill-cards {
     display: -webkit-box;
@@ -1782,7 +1379,6 @@
   .chill-block .chill {
     padding-top: 100px;
     padding-bottom: 100px;
-    margin: 0 30px 0;
   }
   .chill-block .chill .chill-cards {
     display: -webkit-box;
@@ -1809,7 +1405,6 @@
   .chill-block .chill {
     padding-top: 60px;
     padding-bottom: 60px;
-    margin: 0 30px 0;
   }
   .chill-block .chill .chill-cards {
     -ms-flex-wrap: wrap;
@@ -1821,13 +1416,14 @@
   }
   .chill-block .chill .chill-cards .card {
     margin-right: 0;
+    width: initial;
+    height: initial;
   }
 }
 @media (max-width: 450px) {
   .chill-block .chill {
     padding-top: 60px;
     padding-bottom: 30px;
-    margin: 0 20px 0;
   }
   .chill-block .chill .chill-cards {
     display: -webkit-box;
@@ -1838,9 +1434,7 @@
             justify-content: center;
   }
   .chill-block .chill .chill-cards .card {
-    padding: 20px 15px 30px;
-    width: 350px;
-    height: 330px;
+    padding: 20px;
   }
   .chill-block .chill .chill-cards .card__line {
     width: 200px;
@@ -1864,7 +1458,6 @@
   .chill-block .chill {
     padding-top: 60px;
     padding-bottom: 30px;
-    margin: 0 10px 0;
   }
   .chill-block .chill .chill-cards {
     display: -webkit-box;
@@ -1875,9 +1468,7 @@
             justify-content: center;
   }
   .chill-block .chill .chill-cards .card {
-    padding: 20px 15px 30px;
-    width: 300px;
-    height: 300px;
+    margin-bottom: 20px;
   }
   .chill-block .chill .chill-cards .card__description {
     line-height: 17.5px;
@@ -2857,7 +2448,7 @@
     margin: 0 20px 0;
   }
   .contact-block .contact__contact-content .main-title {
-    font-size: 37px;
+    font-size: 27px;
   }
   .contact-block .contact__form {
     display: -webkit-box;

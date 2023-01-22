@@ -1,529 +1,170 @@
 @media (max-width:$compositionsBP1) {
-    .compositions {
-        margin: 0 30px 0;
-        height: initial;
-        padding-top: 100px;
-        padding-bottom: 80px;
-        .main-title {
-            font-size: 45px;
-        }
-        &__description {
-            margin-bottom: 100px;
-        }
+    .songs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .song {
-           display: flex;
-           justify-content: center;
-        
-            &__description {
-                max-width: 450px;
-                height: initial;
-                padding: 20px 20px 20px 20px;
-            }
-            &__name {
-                font-size: 20px;
-                margin-bottom: 25px
-            }
-            &__about {
-                width: 380px;
-                font-weight: 14px;
-                line-height: 22px;
+            
+            &__reactions {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
             &__button {
-                width: 150px;
-                height: 45px;
+                margin-bottom: 20px;
+                margin-right: 0;
             }
-            &__visit {
-                margin-right: 10px;
-                font-size: 13px;
+            &__about {
+                max-width: initial;
             }
-            &__number {
-                font-size: 10px;
-                margin-right: 10px;
-            }
-            &--number-last {
-                font-size: 10px;
-                margin-right: 10px;
-            }
-            &__line {
-                width: 250px;
-            }
-            &__video1 {
-                max-width: 450px;
-                max-height: 325px;
-            }
-            &__video2 {
-                max-width: 450px;
-                max-height: 325px;
-            }
-            &__video3 {
-                max-width: 450px;
-                max-height: 325px;
+            &__video {
+                height: initial;
+                width: initial;
             }
         }
     }
 }
 @media (max-width:$compositionsBP2) {
     .compositions {
-        margin: 0 30px 0;
-        height: initial;
         padding-top: 100px;
-        padding-bottom: 80px;
+        padding-bottom: 100px;
         .main-title {
-            font-size: 37px;
+            font-size: 45px;
         }
         &__description {
-            margin-bottom: 70px;
+            margin-bottom: 100px;
         }
+    }
+    .songs {
+
         .song {
-           display: flex;
-           justify-content: center;
-        
-            &__description {
-                max-width: 350px;
-                max-height: 225px;
-                padding: 20px 20px 20px 20px;
+           &__description {
+            padding: 20px 20px 21px 20px;
+            height: initial;
+           }
+            &__reactions {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
             &__name {
-                font-size: 16px;
-                margin-bottom: 15px;
+                font-size: 20px;
             }
             &__about {
-                width: 300px;
-                font-size: 12px;
-                line-height: 17px;
-                margin-bottom: 15px;
-
-            }
-            &__button {
-                width: 100px;
-                height: 25px;
-            }
-            &__visit {
-                margin-right: 5px;
-                font-size: 9px;
-            }
-            &__number {
-                font-size: 10px;
-                margin-right: 5px;
-            }
-            &--number-last {
-                font-size: 10px;
-                margin-right: 5px;
-            }
-            &__icon  {
-                margin-right: 3px;
-            }
-            &--icon-last  {
-                margin-right: 0px;
-                display: flex;
-                width: 50px;
-            }
-            &__line {
-                width: 200px;
-            }
-            &__video1 {
-                max-width: 350px;
-                max-height: 225px;
-                background-size: cover;
-                background-position: center;
-            }
-            &__video2 {
-                max-width: 350px;
-                max-height: 225px;
-                background-size: cover;
-                background-position: center;
-            }
-            &__video3 {
-                max-width: 350px;
-                max-height: 225px;
-                background-size: cover;
-                background-position: center;
+                height: 70px;
             }
         }
     }
 }
 @media (max-width:$compositionsBP3) {
     .compositions {
-        margin: 0 30px 0;
-        height: initial;
-        padding-top: 70px;
-        padding-bottom: 80px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         .main-title {
-            font-size: 35px;
+            font-size: 45px;
         }
         &__description {
-            margin-bottom: 70px;
+            margin-bottom: 100px;
+            height: initial;
         }
+    }
+    .songs {
         .song {
-           flex-wrap: wrap;
-           flex-direction: column;
-           align-items: center;
-           margin-bottom: 30px;
-            &__description {
-                max-width: 520px;
-                max-height: 325px;
-                padding: 40px 20px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            min-height: initial;
+           &__description {
+            padding: 20px 20px 21px 20px;
+           }
+            &__reactions {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
             &__name {
-                font-size: 16px;
-                margin-bottom: 35px;
+                font-size: 20px;
             }
             &__about {
-                width: 380px;
-                font-size: 12px;
-                line-height: 17px;
-                margin-bottom: 35px;
-
+                height: initial;
             }
-            &__button {
-                width: 140px;
-                height: 45px;
-            }
-            &__visit {
-                margin-right: 7px;
-                font-size: 12px;
-            }
-            &__number {
-                font-size: 10px;
-                margin-right: 10px;
-            }
-            &__icon  {
-                margin-right: 6px;
-            }
-            &--icon-last  {
-                margin-right: 0px;
-                display: flex;
-                align-items: center;
-                
-            }
-            &__line {
-                width: 300px;
-            }
-            &__video1 {
-                max-width: 520px;
-                max-height: 325px;
-                background-size: cover;
-                background-position: center;
-            }
-            &__video2 {
-                max-width: 520px;
-                max-height: 325px;
-                background-size: cover;
-                background-position: center;
-            }
-            &__video3 {
-                max-width: 520px;
-                max-height: 325px;
-                background-size: cover;
-                background-position: center;
-            }
+            
+            
         }
     }
 }
 @media (max-width:$compositionsBP4) {
     .compositions {
-        margin: 0 30px 0;
-        height: initial;
         padding-top: 70px;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
         .main-title {
-            font-size: 30px;
+            font-size: 32px;
+            margin: 0 20px 0;
         }
         &__description {
-            margin-bottom: 70px;
+            margin-bottom: 100px;
+            margin: 0 20px 70px;
         }
+    }
+    .songs {
+        
         .song {
-           flex-wrap: wrap;
-           flex-direction: column;
-           align-items: center;
-           margin-bottom: 30px;
-            &__description {
-                max-width: 390px;
-                max-height: 420px;
-                padding: 15px 15px 15px 15px;
-                
-                
-            }
-            &__name {
-                font-size: 16px;
-                margin-bottom: 20px;
-            }
-            &__about {
-                width: 320px;
-                font-size: 14px;
-                line-height: 17px;
-                margin-bottom: 10px;
-                height: 200px;
-
-            }
-            &__button {
-                width: 180px;
-                height: 55px;
-                margin-right: 0;
-                margin-bottom: 20px;
-            }
-            &__visit {
-                margin-right: 15px;
-                font-size: 16px;
-            }
-            &__number {
-                font-size: 14px;
-                margin-right: 15px;
-            }
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            margin-bottom: 20px;
             
-            &__icon {
-                margin-right: 15px;
-            }
-            &--icon-last  {
-                margin-right: 0px;
-            }
-            &__line {
-                width: 230px;
-            }
-            &__video1 {
-                max-width: 390px;
-                max-height: 250px;
-                background-size: cover;
-                background-position: center;
-            }
-            &__video2 {
-                max-width: 390px;
-                max-height: 250px;
-                background-size: cover;
-                background-position: center;
-            }
-            &__video3 {
-                max-width: 390px;
-                max-height: 250px;
-                background-size: cover;
-                background-position: center;
-            }
+           &__description {
+            padding: 20px 20px 21px 20px;
+            
+           
+           }
             &__reactions {
                 display: flex;
-                flex-wrap: wrap;
                 flex-direction: column;
                 align-items: center;
+            }
+            &__name {
+                font-size: 20px;
             }
         }
     }
 }
 @media (max-width:$compositionsBP5) {
     .compositions {
-        margin: 0 30px 0;
-        height: initial;
         padding-top: 70px;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
         .main-title {
             font-size: 27px;
+            margin: 0 20px 0;
         }
         &__description {
-            margin-bottom: 60px;
-            
-        }
-        .song {
-           flex-wrap: wrap;
-           flex-direction: column;
-           align-items: center;
-           margin-bottom: 30px;
-            &__description {
-                max-width: 380px;
-                max-height: 420px;
-                padding: 20px 15px 15px 20px;
-            }
-            &__name {
-                font-size: 16px;
-                margin-bottom: 10px;
-            }
-            &__about {
-                width: 300px;
-                font-size: 12px;
-                line-height: 17px;
-                margin-bottom: 0px;
-
-            }
-            &__line {
-                width: 230px;
-            }
-            &__video1 {
-                max-width: 380px;
-                max-height: 250px;
-                background-size: cover;
-                background-position: center;
-            }
-            &__video2 {
-                max-width: 380px;
-                max-height: 250px;
-                background-size: cover;
-                background-position: center;
-            }
-            &__video3 {
-                max-width: 380px;
-                max-height: 250px;
-                background-size: cover;
-                background-position: center;
-            }
+            margin-bottom: 100px;
+            margin: 0 20px 70px;
         }
     }
-}
-@media (max-width:$compositionsBP6) {
-    .compositions {
-        margin: 0 20px 0;
-        height: initial;
-        padding-top: 55px;
-        padding-bottom: 40px;
-        .main-title {
-            font-size: 25px;
-        }
-        &__description {
-            margin-bottom: 50px;
-            font-size: 13px;
-        }
-        .song {
-           flex-wrap: wrap;
-           flex-direction: column;
-           align-items: center;
-           margin-bottom: 30px;
-            &__description {
-                max-width: 370px;
-            }
-            &__data {
-                font-size: 13px;
-            }
-            &__about {
-                font-size: 12px;
-                line-height: 17px;
-                margin-bottom: 20px;
-
-            }
-            &__line {
-                width: 230px;
-            }
-            &__video1 {
-                max-width: 370px;
-                max-height: 240px;
-                background-size: cover;
-                background-position: center;
-            }
-            &__video2 {
-                max-width: 370px;
-                max-height: 240px;
-                background-size: cover;
-                background-position: center;
-            }
-            &__video3 {
-                max-width: 370px;
-                max-height: 240px;
-                background-size: cover;
-                background-position: center;
-            }
-        }
-    }
-}
-@media (max-width:$compositionsBP7) {
-    .compositions {
-        margin: 0 20px 0;
-        height: initial;
-        padding-top: 55px;
-        padding-bottom: 40px;
-        .main-title {
-            font-size: 25px;
-        }
-        &__description {
-            margin-bottom: 50px;
-            font-size: 13px;
-        }
-        .song {
-           flex-wrap: wrap;
-           flex-direction: column;
-           align-items: center;
-           margin-bottom: 30px;
-            &__description {
-                max-width: 340px;
-            }
-            &__about {
-                width: 260px;
-                height: 170px;
-            }
-            &__data {
-                font-size: 13px;
-            }
-            &__line {
-                width: 230px;
-            }
-            &__number {
-                font-size: 11px;
-                margin-right: 0px;
-            }
-            &__video1 {
-                max-width: 340px;
-                max-height: 240px;
-                background-size: cover;
-                background-position: center;
-            }
-            &__video2 {
-                max-width: 340px;
-                max-height: 240px;
-                background-size: cover;
-                background-position: center;
-            }
-            &__video3 {
-                max-width: 340px;
-                max-height: 240px;
-                background-size: cover;
-                background-position: center;
-            }
-        }
-    }
-}
-@media (max-width:$compositionsBP8) {
-    .compositions {
-        margin: 0 10px 0;
-        height: initial;
-        padding-top: 55px;
-        padding-bottom: 40px;
+    .songs {
         
-        .main-title {
-            font-size: 25px;
-            margin-bottom: 0px;
-        }
-        &__description {
-            margin-bottom: 50px;
-            font-size: 13px;
-        }
         .song {
-           flex-wrap: wrap;
-           flex-direction: column;
-           align-items: center;
-           margin-bottom: 30px;
-            &__description {
-                max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            
+            
+           &__description {
+            padding: 20px 20px 21px 20px;
+        }
+           &__about {
+            margin-bottom: 40px;
+           
+           }
+            &__reactions {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                align-items: center;
             }
-            &__data {
-                font-size: 13px;
-            }
-            &__line {
-                width: 200px;
-            }
-            &__video1 {
-                max-width: 300px;
-                max-height: 270px;
-                background-size: cover;
-                background-position: center;
-            }
-            &__video2 {
-                max-width: 300px;
-                max-height: 270px;
-                background-size: cover;
-                background-position: center;
-            }
-            &__video3 {
-                max-width: 300px;
-                max-height: 270px;
-                background-size: cover;
-                background-position: center;
+            &__name {
+                font-size: 20px;
             }
         }
     }
